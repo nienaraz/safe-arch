@@ -926,6 +926,104 @@ a {
     color: var(--accent-dark);
 }
 
+.reviews__cta {
+    text-align: center;
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-xl);
+}
+
+.reviews__cta p {
+    font-size: var(--text-lg);
+    color: var(--gray-600);
+    margin-bottom: var(--space-md);
+}
+
+/* ===== VIDEOS CTA (pośrednie) ===== */
+.videos__cta {
+    text-align: center;
+    margin-top: var(--space-2xl);
+    padding: var(--space-2xl);
+    background: var(--off-white);
+    border-radius: var(--radius-xl);
+}
+
+.videos__cta-text {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    color: var(--primary);
+    margin-bottom: var(--space-lg);
+    font-weight: 600;
+}
+
+.videos__cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+/* ===== COMPACT VIDEO GRID (6 items, no filters) ===== */
+.videos__grid--compact {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* ===== PRICING / CENNIK ===== */
+.pricing {
+    padding: var(--space-4xl) 0;
+    background: var(--white);
+}
+
+.pricing__inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.pricing__lead {
+    font-size: var(--text-lg);
+    color: var(--gray-600);
+    line-height: 1.7;
+    margin-bottom: var(--space-xl);
+}
+
+.pricing__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-xl);
+}
+
+.pricing__list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-lg);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.pricing__list li:first-child {
+    border-top: 1px solid var(--gray-200);
+}
+
+.pricing__item-name {
+    font-weight: 500;
+    color: var(--gray-800);
+    font-size: var(--text-base);
+}
+
+.pricing__item-price {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--primary);
+    font-size: var(--text-lg);
+    white-space: nowrap;
+}
+
+.pricing__note {
+    font-size: var(--text-sm);
+    color: var(--gray-500);
+    margin-bottom: var(--space-xl);
+    line-height: 1.6;
+}
+
 /* ===== CONTACT / FORM ===== */
 .contact {
     padding: var(--space-4xl) 0;
@@ -1293,8 +1391,20 @@ a {
         gap: var(--space-md);
     }
 
-    .videos__grid {
+    .videos__grid,
+    .videos__grid--compact {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing__list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-xs);
+    }
+
+    .videos__cta-buttons {
+        flex-direction: column;
+        align-items: center;
     }
 
     .process__line {
@@ -1328,7 +1438,8 @@ a {
 }
 
 @media (max-width: 480px) {
-    .videos__grid {
+    .videos__grid,
+    .videos__grid--compact {
         grid-template-columns: 1fr;
         max-width: 350px;
         margin: 0 auto;

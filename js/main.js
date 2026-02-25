@@ -76,40 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Animate sections
-    document.querySelectorAll('.section-header, .safearch__content, .safearch__video, .doctor__video, .doctor__content, .contact__info, .contact__form-wrapper').forEach(el => {
+    document.querySelectorAll('.section-header, .safearch__content, .safearch__video, .doctor__video, .doctor__content, .contact__info, .contact__form-wrapper, .pricing__inner, .videos__cta, .reviews__cta').forEach(el => {
         el.classList.add('fade-up');
         animateOnScroll.observe(el);
-    });
-
-    // ===== VIDEO FILTER =====
-    const filterBtns = document.querySelectorAll('.videos__filter-btn');
-    const videoCards = document.querySelectorAll('.video-card');
-
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const filter = btn.dataset.filter;
-
-            // Update active button
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            // Filter cards
-            videoCards.forEach(card => {
-                const category = card.dataset.category;
-                if (filter === 'all' || category === filter) {
-                    card.style.display = '';
-                    card.style.opacity = '0';
-                    card.style.transform = 'translateY(20px)';
-                    requestAnimationFrame(() => {
-                        card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateY(0)';
-                    });
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
     });
 
     // ===== CONTACT FORM (Formspree) =====
