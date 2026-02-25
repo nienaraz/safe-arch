@@ -1,0 +1,14 @@
+# robots.txt - safe-arch.vercel.app
+# Dental clinic website - Laser Dental Clinic
+
+User-agent: *
+Allow: /
+
+# Disallow Vercel internal directory
+Disallow: /.vercel/
+
+# Disallow hidden files and directories
+Disallow: /.*
+
+# Sitemap
+Sitemap: https://safe-arch.vercel.app/sitemap.xml
