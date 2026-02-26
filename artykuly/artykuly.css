@@ -262,6 +262,24 @@
     transform: rotate(180deg);
 }
 
+/* Map section */
+.articles-hub__map {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.articles-hub__map iframe {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.articles-hub__map-address {
+    margin-top: var(--space-md);
+    font-size: var(--text-sm);
+    color: var(--gray-500);
+}
+
 /* CTA at bottom */
 .articles-hub__cta {
     text-align: center;
