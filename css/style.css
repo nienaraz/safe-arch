@@ -1471,12 +1471,18 @@ a {
 }
 
 .form__consent-text a {
-    color: var(--accent-light);
+    color: var(--accent-dark);
     text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 500;
+}
+
+.form__consent-text a:visited {
+    color: var(--accent-dark);
 }
 
 .form__consent-text a:hover {
-    color: var(--white);
+    color: var(--primary);
 }
 
 .form__note {
@@ -2096,90 +2102,9 @@ a {
     color: var(--accent-dark);
 }
 
-/* ===== FOOTER LEGAL ===== */
-.footer__legal {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: var(--space-lg);
-    padding-top: var(--space-md);
-}
-
-.footer__legal a {
-    font-size: var(--text-xs);
-    color: var(--gray-400);
-    transition: var(--transition);
-}
-
-.footer__legal a:hover {
-    color: var(--accent);
-}
-
 /* ===== CTA-FOOTER SPACING ===== */
 .articles-hub__cta {
     margin-bottom: var(--space-3xl);
-}
-
-/* ===== CONSENT LINK FIX ===== */
-.form__consent-text a {
-    color: var(--accent-dark);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    font-weight: 500;
-}
-
-.form__consent-text a:hover {
-    color: var(--primary);
-}
-
-/* ===== GLOSSARY SECTION ===== */
-.glossary {
-    padding: var(--space-4xl) 0;
-    background: var(--white);
-}
-
-.glossary__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-lg);
-    margin-bottom: var(--space-2xl);
-}
-
-.glossary__item {
-    padding: var(--space-lg);
-    background: var(--off-white);
-    border-radius: var(--radius-md);
-    border: 1px solid var(--gray-200);
-}
-
-.glossary__term {
-    font-family: var(--font-heading);
-    font-size: var(--text-lg);
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: var(--space-xs);
-}
-
-.glossary__def {
-    font-size: var(--text-sm);
-    color: var(--gray-600);
-    line-height: 1.7;
-}
-
-.glossary__more {
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .glossary__grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer__legal {
-        flex-direction: column;
-        align-items: center;
-        gap: var(--space-sm);
-    }
 }
 
 /* ===== WHATSAPP FLOATING BUTTON ===== */
