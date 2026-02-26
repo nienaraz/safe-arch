@@ -1649,6 +1649,47 @@ a {
     color: var(--white);
 }
 
+/* ===== GLOSSARY SECTION ===== */
+.glossary {
+    padding: var(--space-4xl) 0;
+    background: var(--white);
+}
+
+.glossary__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.glossary__item {
+    padding: var(--space-lg);
+    background: var(--off-white);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--accent);
+}
+
+.glossary__term {
+    font-family: var(--font-heading);
+    font-size: var(--text-base);
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: var(--space-xs);
+}
+
+.glossary__def {
+    font-size: var(--text-sm);
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.glossary__more {
+    text-align: center;
+    margin-top: var(--space-xl);
+}
+
 /* ===== RESPONSIVE ADDITIONS ===== */
 @media (max-width: 768px) {
     .faq__question {
@@ -1669,5 +1710,9 @@ a {
     .contact__map-img {
         height: 150px;
         object-fit: cover;
+    }
+
+    .glossary__grid {
+        grid-template-columns: 1fr;
     }
 }
