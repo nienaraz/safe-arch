@@ -1,4 +1,4 @@
-# robots.txt - magda-przybysz.vercel.app
+# robots.txt - safe-arch.pl
 # Dental clinic website - Laser Dental Clinic
 
 User-agent: *
@@ -11,4 +11,4 @@ Disallow: /.vercel/
 Disallow: /.*
 
 # Sitemap
-Sitemap: https://magda-przybysz.vercel.app/sitemap.xml
+Sitemap: https://safe-arch.pl/sitemap.xml
