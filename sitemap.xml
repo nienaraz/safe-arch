@@ -985,6 +985,38 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Artykuly: metamorfozy -->
+  <url>
+    <loc>https://safe-arch.pl/artykuly/metamorfoza-safe-arch-natychmiastowa-odbudowa.html</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safe-arch.pl/artykuly/metamorfoza-safe-arch-kompleksowa-odbudowa.html</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safe-arch.pl/artykuly/metamorfoza-hybrydowa-odbudowa.html</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safe-arch.pl/artykuly/metamorfoza-pokonanie-leku-przed-dentysta.html</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://safe-arch.pl/artykuly/metamorfoza-most-na-implantach.html</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Polityka prywatnosci -->
   <url>
     <loc>https://safe-arch.pl/polityka-prywatnosci.html</loc>

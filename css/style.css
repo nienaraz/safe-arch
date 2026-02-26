@@ -1281,6 +1281,32 @@ a {
     transition: var(--transition);
 }
 
+.articles__card--featured {
+    background: linear-gradient(165deg, var(--primary-dark), var(--primary));
+    border-color: transparent;
+}
+
+.articles__card--featured h3 {
+    color: var(--white);
+}
+
+.articles__card--featured p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.articles__card--featured .articles__card-link {
+    color: var(--accent-light);
+}
+
+.articles__card--featured:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.articles__card-tag--accent {
+    background: var(--accent-light);
+    color: var(--primary-dark);
+}
+
 .articles__card:hover .articles__card-link {
     color: var(--primary);
 }
