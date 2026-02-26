@@ -1331,7 +1331,7 @@ a {
 .form__input:focus {
     border-color: var(--primary);
     background: var(--white);
-    box-shadow: 0 0 0 4px rgba(27, 77, 110, 0.1);
+    box-shadow: 0 0 0 4px rgba(92, 78, 60, 0.1);
 }
 
 .form__textarea {
@@ -2107,9 +2107,13 @@ a {
         gap: var(--space-sm);
     }
 
-    .contact__map-img {
+    .contact__map-wrapper iframe {
         height: 150px;
-        object-fit: cover;
+    }
+
+    .contact__phone {
+        font-size: var(--text-xl);
+        justify-content: center;
     }
 
     .glossary__grid {
