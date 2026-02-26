@@ -3,6 +3,26 @@
    Nowoczesny, diagramowy design dla 50+
    =================================================== */
 
+/* ===== ACCESSIBILITY ===== */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    z-index: 10000;
+    text-decoration: none;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
 /* ===== RESET & BASE ===== */
 *, *::before, *::after {
     margin: 0;
