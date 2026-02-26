@@ -104,21 +104,42 @@
             "itemListElement": [
               {
                 "@type": "Offer",
-                "itemOffered": {"@type": "MedicalProcedure", "name": "Implant zębowy z koroną"},
+                "itemOffered": {"@type": "MedicalProcedure", "name": "Konsultacja z planem leczenia"},
                 "priceCurrency": "PLN",
-                "price": "4500",
-                "priceSpecification": {"@type": "PriceSpecification", "minPrice": "4500", "priceCurrency": "PLN"}
+                "price": "150",
+                "priceSpecification": {"@type": "PriceSpecification", "price": "150", "priceCurrency": "PLN"}
               },
               {
                 "@type": "Offer",
-                "itemOffered": {"@type": "MedicalProcedure", "name": "Most na implantach"},
+                "itemOffered": {"@type": "MedicalProcedure", "name": "Implant zębowy"},
                 "priceCurrency": "PLN",
-                "price": "12000",
-                "priceSpecification": {"@type": "PriceSpecification", "minPrice": "12000", "priceCurrency": "PLN"}
+                "price": "3500",
+                "priceSpecification": {"@type": "PriceSpecification", "minPrice": "3500", "priceCurrency": "PLN"}
               },
               {
                 "@type": "Offer",
-                "itemOffered": {"@type": "MedicalProcedure", "name": "SAFE ARCH - pełny łuk na implantach"},
+                "itemOffered": {"@type": "MedicalProcedure", "name": "Korona na implancie"},
+                "priceCurrency": "PLN",
+                "price": "3700",
+                "priceSpecification": {"@type": "PriceSpecification", "price": "3700", "priceCurrency": "PLN"}
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {"@type": "MedicalProcedure", "name": "Proteza na 2 implantach"},
+                "priceCurrency": "PLN",
+                "price": "13000",
+                "priceSpecification": {"@type": "PriceSpecification", "minPrice": "13000", "priceCurrency": "PLN"}
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {"@type": "MedicalProcedure", "name": "Proteza na 4 implantach"},
+                "priceCurrency": "PLN",
+                "price": "20000",
+                "priceSpecification": {"@type": "PriceSpecification", "minPrice": "20000", "priceCurrency": "PLN"}
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {"@type": "MedicalProcedure", "name": "SAFE ARCH - pełny łuk na 6 implantach"},
                 "priceCurrency": "PLN",
                 "price": "35000",
                 "priceSpecification": {"@type": "PriceSpecification", "minPrice": "35000", "priceCurrency": "PLN"}
@@ -285,6 +306,22 @@
                     +48 724 809 025
                 </a>
             </div>
+            <div class="hero__pricing">
+                <div class="hero__price-item">
+                    <span class="hero__price-value">od 35 000 zł</span>
+                    <span class="hero__price-label">Pełny łuk na 6 implantach (SAFE ARCH)</span>
+                </div>
+                <div class="hero__price-divider"></div>
+                <div class="hero__price-item">
+                    <span class="hero__price-value">od 3 500 zł</span>
+                    <span class="hero__price-label">Pojedynczy implant</span>
+                </div>
+                <div class="hero__price-divider"></div>
+                <div class="hero__price-item">
+                    <span class="hero__price-value">150 zł</span>
+                    <span class="hero__price-label">Konsultacja z planem leczenia</span>
+                </div>
+            </div>
             <div class="hero__trust">
                 <div class="hero__trust-item">
                     <span class="hero__trust-number">9800+</span>
@@ -351,66 +388,74 @@
                 <p class="section-desc">Posłuchaj dr Magdaleny Przybysz - prosto, bez żargonu medycznego. Każdy film to odpowiedź na pytanie, które zadają nasi pacjenci.</p>
             </div>
 
-            <div class="videos__grid videos__grid--compact" id="videoGrid">
-                <div class="video-card">
-                    <a href="https://www.youtube.com/shorts/XXCJFQTa9Dk" target="_blank" rel="noopener" class="video-card__embed video-card__link">
-                        <img src="https://i.ytimg.com/vi/XXCJFQTa9Dk/oar2.jpg" alt="Ruchoma proteza to nie jedyne wyjście" loading="lazy">
-                        <div class="video-card__play">
-                            <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+            <div class="videos__carousel-wrap">
+                <button class="videos__carousel-btn videos__carousel-btn--prev" aria-label="Poprzedni film" onclick="document.getElementById('videoGrid').scrollBy({left:-240,behavior:'smooth'})">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <div class="videos__grid videos__grid--compact" id="videoGrid">
+                    <div class="video-card">
+                        <a href="https://www.youtube.com/shorts/XXCJFQTa9Dk" target="_blank" rel="noopener" class="video-card__embed video-card__link">
+                            <img src="https://i.ytimg.com/vi/XXCJFQTa9Dk/oar2.jpg" alt="Ruchoma proteza to nie jedyne wyjście" loading="lazy">
+                            <div class="video-card__play">
+                                <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+                            </div>
+                        </a>
+                        <div class="video-card__content">
+                            <h3>Ruchoma proteza to nie jedyne wyjście</h3>
                         </div>
-                    </a>
-                    <div class="video-card__content">
-                        <h3>Ruchoma proteza to nie jedyne wyjście</h3>
                     </div>
-                </div>
 
-                <div class="video-card">
-                    <a href="https://www.youtube.com/shorts/AHQtxBne0Kg" target="_blank" rel="noopener" class="video-card__embed video-card__link">
-                        <img src="https://i.ytimg.com/vi/AHQtxBne0Kg/oar2.jpg" alt="Nie mam zębów = muszę żyć z protezą?" loading="lazy">
-                        <div class="video-card__play">
-                            <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+                    <div class="video-card">
+                        <a href="https://www.youtube.com/shorts/AHQtxBne0Kg" target="_blank" rel="noopener" class="video-card__embed video-card__link">
+                            <img src="https://i.ytimg.com/vi/AHQtxBne0Kg/oar2.jpg" alt="Nie mam zębów = muszę żyć z protezą?" loading="lazy">
+                            <div class="video-card__play">
+                                <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+                            </div>
+                        </a>
+                        <div class="video-card__content">
+                            <h3>Nie mam zębów = muszę żyć z protezą?</h3>
                         </div>
-                    </a>
-                    <div class="video-card__content">
-                        <h3>Nie mam zębów = muszę żyć z protezą?</h3>
                     </div>
-                </div>
 
-                <div class="video-card">
-                    <a href="https://www.youtube.com/shorts/gpohL0eAMmo" target="_blank" rel="noopener" class="video-card__embed video-card__link">
-                        <img src="https://i.ytimg.com/vi/gpohL0eAMmo/oar2.jpg" alt="Implant musi boleć? Sprawdź!" loading="lazy">
-                        <div class="video-card__play">
-                            <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+                    <div class="video-card">
+                        <a href="https://www.youtube.com/shorts/gpohL0eAMmo" target="_blank" rel="noopener" class="video-card__embed video-card__link">
+                            <img src="https://i.ytimg.com/vi/gpohL0eAMmo/oar2.jpg" alt="Implant musi boleć? Sprawdź!" loading="lazy">
+                            <div class="video-card__play">
+                                <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+                            </div>
+                        </a>
+                        <div class="video-card__content">
+                            <h3>Czy implant musi boleć?</h3>
                         </div>
-                    </a>
-                    <div class="video-card__content">
-                        <h3>Czy implant musi boleć?</h3>
                     </div>
-                </div>
 
-                <div class="video-card">
-                    <a href="https://www.youtube.com/shorts/JrxRyVrzIwE" target="_blank" rel="noopener" class="video-card__embed video-card__link">
-                        <img src="https://i.ytimg.com/vi/JrxRyVrzIwE/oar2.jpg" alt="Przypadek pacjentki - efekt leczenia" loading="lazy">
-                        <div class="video-card__play">
-                            <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+                    <div class="video-card">
+                        <a href="https://www.youtube.com/shorts/JrxRyVrzIwE" target="_blank" rel="noopener" class="video-card__embed video-card__link">
+                            <img src="https://i.ytimg.com/vi/JrxRyVrzIwE/oar2.jpg" alt="Przypadek pacjentki - efekt leczenia" loading="lazy">
+                            <div class="video-card__play">
+                                <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+                            </div>
+                        </a>
+                        <div class="video-card__content">
+                            <h3>Efekt leczenia - historia pacjentki</h3>
                         </div>
-                    </a>
-                    <div class="video-card__content">
-                        <h3>Efekt leczenia - historia pacjentki</h3>
                     </div>
-                </div>
 
-                <div class="video-card">
-                    <a href="https://www.youtube.com/shorts/NSyHzWpNJeA" target="_blank" rel="noopener" class="video-card__embed video-card__link">
-                        <img src="https://i.ytimg.com/vi/NSyHzWpNJeA/oar2.jpg" alt="Jak działa implant?" loading="lazy">
-                        <div class="video-card__play">
-                            <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+                    <div class="video-card">
+                        <a href="https://www.youtube.com/shorts/NSyHzWpNJeA" target="_blank" rel="noopener" class="video-card__embed video-card__link">
+                            <img src="https://i.ytimg.com/vi/NSyHzWpNJeA/oar2.jpg" alt="Jak działa implant?" loading="lazy">
+                            <div class="video-card__play">
+                                <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+                            </div>
+                        </a>
+                        <div class="video-card__content">
+                            <h3>Jak działa implant?</h3>
                         </div>
-                    </a>
-                    <div class="video-card__content">
-                        <h3>Jak działa implant?</h3>
                     </div>
                 </div>
+                <button class="videos__carousel-btn videos__carousel-btn--next" aria-label="Następny film" onclick="document.getElementById('videoGrid').scrollBy({left:240,behavior:'smooth'})">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
             </div>
 
             <div class="videos__more">
@@ -699,19 +744,39 @@
                     <p class="pricing__lead">Każdy przypadek jest inny - dlatego dokładną wycenę przygotowujemy na konsultacji, po badaniu i tomografii 3D. Ale chcemy, żebyś wiedział/a, czego się spodziewać:</p>
                     <ul class="pricing__list">
                         <li>
-                            <span class="pricing__item-name">Pojedynczy implant z koroną</span>
-                            <span class="pricing__item-price">od 4 500 zł</span>
+                            <span class="pricing__item-name">Konsultacja z planem leczenia</span>
+                            <span class="pricing__item-price">150 zł</span>
                         </li>
                         <li>
-                            <span class="pricing__item-name">Most na implantach (kilka zębów)</span>
-                            <span class="pricing__item-price">od 12 000 zł</span>
+                            <span class="pricing__item-name">Implant</span>
+                            <span class="pricing__item-price">od 3 500 zł</span>
                         </li>
                         <li>
-                            <span class="pricing__item-name">Pełny łuk na implantach (SAFE ARCH)</span>
+                            <span class="pricing__item-name">Korona na implancie</span>
+                            <span class="pricing__item-price">3 700 zł</span>
+                        </li>
+                        <li>
+                            <span class="pricing__item-name">Proteza na 2 implantach</span>
+                            <span class="pricing__item-price">od 13 000 zł</span>
+                        </li>
+                        <li>
+                            <span class="pricing__item-name">Proteza na 4 implantach</span>
+                            <span class="pricing__item-price">od 20 000 zł</span>
+                        </li>
+                        <li class="pricing__item--highlight">
+                            <span class="pricing__item-name">Pełny łuk na 6 implantach (SAFE ARCH)</span>
                             <span class="pricing__item-price">od 35 000 zł</span>
                         </li>
+                        <li>
+                            <span class="pricing__item-name">Odbudowa kości</span>
+                            <span class="pricing__item-price">od 3 000 zł</span>
+                        </li>
+                        <li>
+                            <span class="pricing__item-name">Podniesienie zatoki</span>
+                            <span class="pricing__item-price">od 3 000 zł</span>
+                        </li>
                     </ul>
-                    <p class="pricing__note">Oferujemy raty i indywidualne plany płatności. Cenę poznasz na konsultacji - bez zobowiązań.</p>
+                    <p class="pricing__note">Konsultacja to rozmowa o Twoich potrzebach - poznasz plan leczenia i dokładne koszty. Oferujemy raty i indywidualne plany płatności.</p>
                     <a href="#formularz" class="btn btn--primary btn--lg">Umów konsultację i poznaj cenę</a>
                 </div>
             </div>
@@ -979,7 +1044,7 @@
                             <label class="form__checkbox">
                                 <input type="checkbox" required>
                                 <span class="form__checkmark"></span>
-                                <span class="form__consent-text">Wyrażam zgodę na kontakt telefoniczny w celu umówienia wizyty.</span>
+                                <span class="form__consent-text">Wyrażam zgodę na <a href="/polityka-prywatnosci" target="_blank">przetwarzanie danych osobowych</a> w celach marketingowych.</span>
                             </label>
                         </div>
                         <button type="submit" class="btn btn--primary btn--lg btn--full" id="submitBtn">

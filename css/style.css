@@ -325,6 +325,45 @@ a {
     color: var(--white);
 }
 
+/* ===== HERO PRICING ===== */
+.hero__pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+    padding: var(--space-lg) var(--space-xl);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hero__price-item {
+    text-align: center;
+}
+
+.hero__price-value {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    font-weight: 800;
+    color: var(--white);
+}
+
+.hero__price-label {
+    font-size: var(--text-xs);
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 0.2rem;
+    line-height: 1.3;
+}
+
+.hero__price-divider {
+    width: 1px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
 .hero__trust {
     display: flex;
     align-items: center;
@@ -982,9 +1021,70 @@ a {
     flex-wrap: wrap;
 }
 
-/* ===== COMPACT VIDEO GRID (6 items, no filters) ===== */
+/* ===== COMPACT VIDEO CAROUSEL (swipeable on all devices) ===== */
 .videos__grid--compact {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: var(--space-md);
+    padding-bottom: var(--space-sm);
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.videos__grid--compact::-webkit-scrollbar {
+    display: none;
+}
+
+.videos__grid--compact .video-card {
+    flex: 0 0 220px;
+    scroll-snap-align: start;
+}
+
+.videos__grid--compact .video-card__content {
+    padding: var(--space-sm) var(--space-md);
+}
+
+.videos__grid--compact .video-card__content h3 {
+    font-size: 0.8rem;
+}
+
+/* Carousel navigation arrows */
+.videos__carousel-wrap {
+    position: relative;
+}
+
+.videos__carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    z-index: 3;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.videos__carousel-btn:hover {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+.videos__carousel-btn--prev {
+    left: -16px;
+}
+
+.videos__carousel-btn--next {
+    right: -16px;
 }
 
 /* ===== PRICING / CENNIK ===== */
@@ -1035,6 +1135,23 @@ a {
     color: var(--primary);
     font-size: var(--text-lg);
     white-space: nowrap;
+}
+
+.pricing__item--highlight {
+    background: rgba(0, 82, 112, 0.05);
+    border-radius: var(--radius-md);
+    padding: var(--space-md) !important;
+    border-left: 3px solid var(--primary) !important;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.pricing__item--highlight .pricing__item-name {
+    font-weight: 700;
+    font-size: var(--text-lg);
+}
+
+.pricing__item--highlight .pricing__item-price {
+    font-size: var(--text-xl);
 }
 
 .pricing__note {
@@ -1194,6 +1311,15 @@ a {
     accent-color: var(--primary);
 }
 
+.form__consent-text a {
+    color: var(--accent-light);
+    text-decoration: underline;
+}
+
+.form__consent-text a:hover {
+    color: var(--white);
+}
+
 .form__note {
     text-align: center;
     font-size: var(--text-xs);
@@ -1351,6 +1477,10 @@ a {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .videos__carousel-btn {
+        display: none;
+    }
+
     .safearch__inner,
     .doctor__inner,
     .contact__inner {
@@ -1389,6 +1519,21 @@ a {
         font-size: var(--text-3xl);
     }
 
+    .hero__pricing {
+        flex-direction: column;
+        gap: var(--space-md);
+        padding: var(--space-md);
+    }
+
+    .hero__price-divider {
+        width: 80%;
+        height: 1px;
+    }
+
+    .hero__price-value {
+        font-size: var(--text-xl);
+    }
+
     .hero__trust {
         gap: var(--space-md);
     }
@@ -1411,9 +1556,12 @@ a {
         gap: var(--space-md);
     }
 
-    .videos__grid,
-    .videos__grid--compact {
+    .videos__grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .videos__grid--compact .video-card {
+        flex: 0 0 55%;
     }
 
     .pricing__list li {
@@ -1458,11 +1606,14 @@ a {
 }
 
 @media (max-width: 480px) {
-    .videos__grid,
-    .videos__grid--compact {
+    .videos__grid {
         grid-template-columns: 1fr;
         max-width: 350px;
         margin: 0 auto;
+    }
+
+    .videos__grid--compact .video-card {
+        flex: 0 0 70%;
     }
 
     .hero__cta {
