@@ -17,6 +17,10 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Czy implantacja boli?">
     <meta name="twitter:description" content="Czy implantacja zębów boli? Szczera odpowiedź na najczęstsze obawy pacjentów. Ból podczas i po zabiegu, skala bólu i sposoby radzenia sobie z dyskomfortem.">
+    <meta name="geo.region" content="PL-14">
+    <meta name="geo.placename" content="Warszawa">
+    <meta name="geo.position" content="52.2993;20.9988">
+    <meta name="ICBM" content="52.2993, 20.9988">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -49,7 +53,7 @@
       ]
     },
     {
-      "@type": "Article",
+      "@type": ["Article", "MedicalWebPage"],
       "headline": "Czy implantacja boli?",
       "description": "Czy implantacja zębów boli? Szczera odpowiedź na najczęstsze obawy pacjentów. Ból podczas i po zabiegu, skala bólu i sposoby radzenia sobie z dyskomfortem.",
       "url": "https://safe-arch.vercel.app/artykuly/036-czy-implantacja-boli.html",
@@ -85,7 +89,9 @@
       "datePublished": "2025-01-15",
       "dateModified": "2025-06-01",
       "inLanguage": "pl-PL",
-      "articleSection": "Zabieg"
+      "medicalAudience": {"@type": "MedicalAudience", "audienceType": "Patient"},
+        "specialty": {"@type": "MedicalSpecialty", "name": "Dentistry"},
+        "articleSection": "Zabieg"
     }
   ]
 }
