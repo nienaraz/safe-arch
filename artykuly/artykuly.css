@@ -239,7 +239,50 @@
 }
 
 .article__cta .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.article__cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+}
+
+.article__cta-buttons .btn--phone {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.article__cta-buttons .btn--whatsapp {
+    background: #25D366;
+    color: var(--white);
+}
+
+.article__cta-buttons .btn--whatsapp:hover {
+    background: #128C7E;
+}
+
+.article__cta-pricing {
+    background: rgba(255,255,255,0.15);
+    border-radius: var(--radius-md);
+    padding: var(--space-sm) var(--space-md);
+    margin-bottom: var(--space-sm);
+    font-size: var(--text-sm);
+}
+
+.article__cta-pricing a {
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.article__cta-address {
+    font-size: var(--text-sm);
+    opacity: 0.8;
+    margin: 0;
 }
 
 /* Article navigation */
