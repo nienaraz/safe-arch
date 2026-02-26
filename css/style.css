@@ -32,14 +32,14 @@
 
 :root {
     /* Colors */
-    --primary: #1B4D6E;
-    --primary-light: #2A6F97;
-    --primary-dark: #0F2D42;
+    --primary: #5C4E3C;
+    --primary-light: #766E64;
+    --primary-dark: #3A2F24;
     --accent: #AD9B83;
     --accent-light: #C4B49E;
     --accent-dark: #8F7F69;
     --white: #FFFFFF;
-    --off-white: #F8F6F3;
+    --off-white: #F1EEEC;
     --gray-50: #FAFAF9;
     --gray-100: #F3F2F0;
     --gray-200: #E8E6E3;
@@ -51,7 +51,7 @@
     --gray-800: #262420;
     --gray-900: #1A1816;
     --success: #059669;
-    --tag-blue: #2563EB;
+    --tag-blue: #8F7F69;
     --tag-green: #059669;
     --tag-red: #DC2626;
 
@@ -750,7 +750,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(27,77,110,0.08), rgba(27,77,110,0.04));
+    background: linear-gradient(135deg, rgba(92,78,60,0.1), rgba(92,78,60,0.04));
     border-radius: var(--radius-md);
     margin: 0 auto var(--space-md);
     color: var(--primary);
