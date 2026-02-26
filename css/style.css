@@ -228,6 +228,7 @@ a {
 .nav__logo-img {
     height: 32px;
     width: auto;
+    flex-shrink: 0;
 }
 
 .nav__actions {
@@ -1978,16 +1979,16 @@ a {
         display: none;
     }
 
-    .nav__actions .btn span {
+    .nav__logo {
+        flex-shrink: 0;
+    }
+
+    .nav__actions .btn--phone {
         display: none;
     }
 
     .nav__actions .btn--primary {
         font-size: var(--text-xs);
-    }
-
-    .nav__actions .btn--primary span {
-        display: inline;
     }
 }
 
