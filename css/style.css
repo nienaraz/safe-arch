@@ -841,22 +841,6 @@ a {
     margin-top: 2px;
 }
 
-.safearch__photo {
-    position: relative;
-    width: 100%;
-    border-radius: var(--radius-xl);
-    overflow: hidden;
-    box-shadow: var(--shadow-xl);
-}
-
-.safearch__photo-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: var(--radius-xl);
-}
-
 /* Zachowane dla kompatybilności z innymi stronami */
 .safearch__video-wrapper {
     position: relative;
@@ -1912,7 +1896,7 @@ a {
     }
 
     .hero__pricing {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: var(--space-md);
         padding: var(--space-md);
         max-width: 100%;
@@ -1921,11 +1905,13 @@ a {
     .hero__price-divider {
         width: 80%;
         height: 1px;
-        justify-self: center;
+        margin: 0 auto;
     }
 
     .hero__price-value {
         font-size: var(--text-xl);
+        height: auto;
+        line-height: 1.2;
     }
 
     .hero__trust {
