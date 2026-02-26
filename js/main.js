@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Animate sections
-    document.querySelectorAll('.section-header, .safearch__content, .safearch__video, .doctor__video, .doctor__content, .contact__info, .contact__form-wrapper, .pricing__inner, .videos__cta, .reviews__cta, .articles__cta').forEach(el => {
+    document.querySelectorAll('.section-header, .doctor__content, .contact__info, .contact__form-wrapper, .pricing__inner, .reviews__cta').forEach(el => {
         el.classList.add('fade-up');
         animateOnScroll.observe(el);
     });
@@ -84,13 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Animate section tags separately
     document.querySelectorAll('.section-tag').forEach(el => {
         animateOnScroll.observe(el);
-    });
-
-    // Animate safearch list items with stagger
-    document.querySelectorAll('.safearch__list li').forEach((li, i) => {
-        li.classList.add('fade-up');
-        li.style.transitionDelay = `${i * 0.08}s`;
-        animateOnScroll.observe(li);
     });
 
     // Animate doctor stats
@@ -107,13 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
         animateOnScroll.observe(li);
     });
 
-    // Animate glossary items
-    document.querySelectorAll('.glossary__item').forEach((item, i) => {
-        item.classList.add('fade-up');
-        item.style.transitionDelay = `${(i % 2) * 0.15}s`;
-        animateOnScroll.observe(item);
-    });
-
     // Animate FAQ items
     document.querySelectorAll('.faq__item').forEach((item, i) => {
         item.classList.add('fade-up');
@@ -125,13 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.doctor__photo').forEach(el => {
         el.classList.add('scale-up');
         animateOnScroll.observe(el);
-    });
-
-    // Animate article cards
-    document.querySelectorAll('.articles__card').forEach((card, index) => {
-        card.classList.add('fade-up');
-        card.style.transitionDelay = `${index * 0.1}s`;
-        animateOnScroll.observe(card);
     });
 
     // ===== COUNTER ANIMATION =====

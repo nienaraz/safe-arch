@@ -103,48 +103,10 @@
             "@type": "OfferCatalog",
             "name": "Usługi implantologiczne",
             "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {"@type": "MedicalProcedure", "name": "Konsultacja z planem leczenia"},
-                "priceCurrency": "PLN",
-                "price": "150",
-                "priceSpecification": {"@type": "PriceSpecification", "price": "150", "priceCurrency": "PLN"}
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {"@type": "MedicalProcedure", "name": "Implant zębowy"},
-                "priceCurrency": "PLN",
-                "price": "3500",
-                "priceSpecification": {"@type": "PriceSpecification", "minPrice": "3500", "priceCurrency": "PLN"}
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {"@type": "MedicalProcedure", "name": "Korona na implancie"},
-                "priceCurrency": "PLN",
-                "price": "3700",
-                "priceSpecification": {"@type": "PriceSpecification", "price": "3700", "priceCurrency": "PLN"}
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {"@type": "MedicalProcedure", "name": "Proteza na 2 implantach"},
-                "priceCurrency": "PLN",
-                "price": "13000",
-                "priceSpecification": {"@type": "PriceSpecification", "minPrice": "13000", "priceCurrency": "PLN"}
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {"@type": "MedicalProcedure", "name": "Proteza na 6 implantach"},
-                "priceCurrency": "PLN",
-                "price": "20000",
-                "priceSpecification": {"@type": "PriceSpecification", "minPrice": "20000", "priceCurrency": "PLN"}
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {"@type": "MedicalProcedure", "name": "SAFE ARCH - pełny łuk na 6 implantach"},
-                "priceCurrency": "PLN",
-                "price": "35000",
-                "priceSpecification": {"@type": "PriceSpecification", "minPrice": "35000", "priceCurrency": "PLN"}
-              }
+              {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Konsultacja z planem leczenia"}, "priceCurrency": "PLN", "price": "150"},
+              {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Implant zębowy"}, "priceCurrency": "PLN", "price": "3500"},
+              {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Korona na implancie"}, "priceCurrency": "PLN", "price": "3700"},
+              {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "SAFE ARCH - pełny łuk na 6 implantach"}, "priceCurrency": "PLN", "price": "35000"}
             ]
           }
         },
@@ -154,27 +116,11 @@
           "name": "dr Magdalena Przybysz",
           "jobTitle": "Lekarz dentysta, specjalista implantologii",
           "worksFor": {"@id": "https://safe-arch.pl/#organization"},
-          "description": "20 lat doświadczenia w implantologii, tysiące wszczepionych implantów. Specjalista implantologii, laseroterapii i protetyki.",
+          "description": "20 lat doświadczenia w implantologii, tysiące wszczepionych implantów.",
           "knowsAbout": ["Implantologia", "SAFE ARCH", "All-on-6", "Laseroterapia", "Protetyka"]
         },
-        {
-          "@type": "WebPage",
-          "@id": "https://safe-arch.pl/#webpage",
-          "url": "https://safe-arch.pl/",
-          "name": "Leczenie Bezzębia | Laser Dental Clinic Warszawa | Implanty & SAFE ARCH",
-          "description": "Leczenie bezzębia w Laser Dental Clinic Warszawa. Implanty, SAFE ARCH, stały most - koniec z ruchomą protezą.",
-          "isPartOf": {"@id": "https://safe-arch.pl/#website"},
-          "about": {"@id": "https://safe-arch.pl/#organization"},
-          "inLanguage": "pl-PL"
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://safe-arch.pl/#website",
-          "url": "https://safe-arch.pl/",
-          "name": "Laser Dental Clinic - Leczenie Bezzębia",
-          "publisher": {"@id": "https://safe-arch.pl/#organization"},
-          "inLanguage": "pl-PL"
-        }
+        {"@type": "WebPage", "@id": "https://safe-arch.pl/#webpage", "url": "https://safe-arch.pl/", "name": "Leczenie Bezzębia | Laser Dental Clinic Warszawa", "isPartOf": {"@id": "https://safe-arch.pl/#website"}, "about": {"@id": "https://safe-arch.pl/#organization"}, "inLanguage": "pl-PL"},
+        {"@type": "WebSite", "@id": "https://safe-arch.pl/#website", "url": "https://safe-arch.pl/", "name": "Laser Dental Clinic - Leczenie Bezzębia", "publisher": {"@id": "https://safe-arch.pl/#organization"}, "inLanguage": "pl-PL"}
       ]
     }
     </script>
@@ -182,939 +128,252 @@
     {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "Filmy dr Magdaleny Przybysz o bezzębiu i implantach",
-      "numberOfItems": 5,
+      "name": "Filmy dr Magdaleny Przybysz",
+      "numberOfItems": 3,
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "VideoObject",
-            "name": "Ruchoma proteza to nie jedyne wyjście",
-            "description": "Dr Magdalena Przybysz wyjaśnia alternatywy dla ruchomej protezy - implanty zębowe i metoda SAFE ARCH.",
-            "thumbnailUrl": "https://i.ytimg.com/vi/XXCJFQTa9Dk/oar2.jpg",
-            "contentUrl": "https://www.youtube.com/shorts/XXCJFQTa9Dk",
-            "uploadDate": "2024-12-01",
-            "duration": "PT1M",
-            "author": {"@type": "Person", "name": "dr Magdalena Przybysz"},
-            "publisher": {"@type": "Organization", "name": "Laser Dental Clinic"}
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "VideoObject",
-            "name": "Nie mam zębów = muszę żyć z protezą?",
-            "description": "Czy brak zębów oznacza konieczność noszenia protezy ruchomej? Dr Przybysz pokazuje nowoczesne rozwiązania.",
-            "thumbnailUrl": "https://i.ytimg.com/vi/AHQtxBne0Kg/oar2.jpg",
-            "contentUrl": "https://www.youtube.com/shorts/AHQtxBne0Kg",
-            "uploadDate": "2024-12-15",
-            "duration": "PT1M",
-            "author": {"@type": "Person", "name": "dr Magdalena Przybysz"},
-            "publisher": {"@type": "Organization", "name": "Laser Dental Clinic"}
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "VideoObject",
-            "name": "Czy implant musi boleć?",
-            "description": "Obalamy mit - implantacja nie musi boleć. Dr Przybysz wyjaśnia nowoczesne metody znieczulenia.",
-            "thumbnailUrl": "https://i.ytimg.com/vi/gpohL0eAMmo/oar2.jpg",
-            "contentUrl": "https://www.youtube.com/shorts/gpohL0eAMmo",
-            "uploadDate": "2025-01-20",
-            "duration": "PT1M",
-            "author": {"@type": "Person", "name": "dr Magdalena Przybysz"},
-            "publisher": {"@type": "Organization", "name": "Laser Dental Clinic"}
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "item": {
-            "@type": "VideoObject",
-            "name": "Efekt leczenia - historia pacjentki",
-            "description": "Prawdziwa historia pacjentki - od bezzębia do pełnego uśmiechu dzięki implantom w Laser Dental Clinic.",
-            "thumbnailUrl": "https://i.ytimg.com/vi/JrxRyVrzIwE/oar2.jpg",
-            "contentUrl": "https://www.youtube.com/shorts/JrxRyVrzIwE",
-            "uploadDate": "2025-02-01",
-            "duration": "PT1M",
-            "author": {"@type": "Person", "name": "dr Magdalena Przybysz"},
-            "publisher": {"@type": "Organization", "name": "Laser Dental Clinic"}
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "item": {
-            "@type": "VideoObject",
-            "name": "Jak działa implant?",
-            "description": "Prosty opis jak działa implant zębowy - od wszczepu tytanowego po finalną koronę.",
-            "thumbnailUrl": "https://i.ytimg.com/vi/NSyHzWpNJeA/oar2.jpg",
-            "contentUrl": "https://www.youtube.com/shorts/NSyHzWpNJeA",
-            "uploadDate": "2025-02-10",
-            "duration": "PT1M",
-            "author": {"@type": "Person", "name": "dr Magdalena Przybysz"},
-            "publisher": {"@type": "Organization", "name": "Laser Dental Clinic"}
-          }
-        }
+        {"@type": "ListItem", "position": 1, "item": {"@type": "VideoObject", "name": "Ruchoma proteza to nie jedyne wyjście", "thumbnailUrl": "https://i.ytimg.com/vi/XXCJFQTa9Dk/oar2.jpg", "contentUrl": "https://www.youtube.com/shorts/XXCJFQTa9Dk", "uploadDate": "2024-12-01", "duration": "PT1M"}},
+        {"@type": "ListItem", "position": 2, "item": {"@type": "VideoObject", "name": "Czy implant musi boleć?", "thumbnailUrl": "https://i.ytimg.com/vi/gpohL0eAMmo/oar2.jpg", "contentUrl": "https://www.youtube.com/shorts/gpohL0eAMmo", "uploadDate": "2025-01-20", "duration": "PT1M"}},
+        {"@type": "ListItem", "position": 3, "item": {"@type": "VideoObject", "name": "Efekt leczenia - historia pacjentki", "thumbnailUrl": "https://i.ytimg.com/vi/JrxRyVrzIwE/oar2.jpg", "contentUrl": "https://www.youtube.com/shorts/JrxRyVrzIwE", "uploadDate": "2025-02-01", "duration": "PT1M"}}
       ]
     }
     </script>
 </head>
 <body>
-    <!-- Skip to content - accessibility -->
     <a href="#main-content" class="skip-link">Przejdź do treści głównej</a>
 
     <!-- ===== STICKY NAV ===== -->
     <nav class="nav" id="nav" aria-label="Nawigacja główna">
         <div class="nav__inner container">
-            <a href="#" class="nav__logo">
-                <img src="img/logo-header.png" alt="Laser Dental Clinic" class="nav__logo-img">
-            </a>
+            <a href="#" class="nav__logo"><img src="img/logo-header.png" alt="Laser Dental Clinic" class="nav__logo-img"></a>
             <div class="nav__actions">
-                <a href="tel:+48724809025" class="btn btn--phone">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    <span>Zadzwoń</span>
-                </a>
+                <a href="tel:+48724809025" class="btn btn--phone"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Zadzwoń</span></a>
                 <a href="#formularz" class="btn btn--primary">Umów konsultację</a>
             </div>
         </div>
     </nav>
 
-    <!-- ===== HERO ===== -->
+    <!-- ===== 1. HERO ===== -->
     <header class="hero" id="main-content">
         <div class="hero__bg"></div>
         <div class="hero__content container">
-            <div class="hero__badge">
-                <img src="img/logo-header.png" alt="Laser Dental Clinic Warszawa" class="hero__badge-logo">
-            </div>
+            <div class="hero__badge"><img src="img/logo-header.png" alt="Laser Dental Clinic Warszawa" class="hero__badge-logo"></div>
             <h1 class="hero__title">
-                Leczenie bezzębia — koniec z&nbsp;protezą.<br>
-                <span class="hero__title-accent">Stałe zęby w&nbsp;jeden dzień.</span>
+                Koniec z&nbsp;ruchomą protezą.<br>
+                <span class="hero__title-accent">Nowe zęby w&nbsp;dniu zabiegu.*</span>
             </h1>
-            <p class="hero__subtitle">
-                Odzyskaj pewny uśmiech metodą SAFE ARCH — bez bólu, bezpiecznie, na&nbsp;stałe.
-            </p>
+            <p class="hero__subtitle">Odzyskaj pewny uśmiech — implant zamiast protezy. Bezpiecznie, w&nbsp;znieczuleniu, u&nbsp;doświadczonego lekarza.</p>
             <div class="hero__cta">
-                <a href="#formularz" class="btn btn--primary btn--lg">
-                    Umów konsultację
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="tel:+48724809025" class="btn btn--outline btn--lg">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    +48 724 809 025
-                </a>
+                <a href="#formularz" class="btn btn--primary btn--lg">Zostaw numer — oddzwonimy<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                <a href="tel:+48724809025" class="btn btn--outline btn--lg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+48 724 809 025</a>
             </div>
+            <p style="color: rgba(255,255,255,0.6); font-size: var(--text-xs); margin-top: calc(-1 * var(--space-2xl)); margin-bottom: var(--space-xl); text-align: center;">Oddzwaniamy w&nbsp;ciągu 2h. Bez zobowiązań.</p>
             <div class="hero__pricing">
-                <div class="hero__price-item">
-                    <span class="hero__price-value">od 35 000 zł</span>
-                    <span class="hero__price-label">Pełny łuk na 6 implantach (SAFE ARCH)</span>
-                </div>
+                <div class="hero__price-item"><span class="hero__price-value">od 35 000 zł</span><span class="hero__price-label">Stałe zęby na implantach (SAFE&nbsp;ARCH)</span></div>
                 <div class="hero__price-divider"></div>
-                <div class="hero__price-item">
-                    <span class="hero__price-value">od 3 500 zł</span>
-                    <span class="hero__price-label">Pojedynczy implant</span>
-                </div>
+                <div class="hero__price-item"><span class="hero__price-value">od 3 500 zł</span><span class="hero__price-label">Pojedynczy implant</span></div>
                 <div class="hero__price-divider"></div>
-                <div class="hero__price-item">
-                    <span class="hero__price-value">150 zł</span>
-                    <span class="hero__price-label">Konsultacja z planem leczenia</span>
-                </div>
+                <div class="hero__price-item"><span class="hero__price-value">150 zł</span><span class="hero__price-label">Konsultacja z&nbsp;planem leczenia</span></div>
             </div>
+            <p style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin-top: var(--space-sm); text-align: center;">* Tymczasowe zęby w&nbsp;dniu zabiegu. Stałe, ostateczne uzupełnienie po 4–6 mies. gojenia. Raty i&nbsp;indywidualne plany płatności.</p>
             <div class="hero__trust">
-                <div class="hero__trust-item">
-                    <span class="hero__trust-number">Tysiące</span>
-                    <span class="hero__trust-label">wszczepionych implantów</span>
-                </div>
+                <div class="hero__trust-item"><span class="hero__trust-number">20&nbsp;lat</span><span class="hero__trust-label">doświadczenia</span></div>
                 <div class="hero__trust-divider"></div>
-                <div class="hero__trust-item">
-                    <span class="hero__trust-number">20&nbsp;lat</span>
-                    <span class="hero__trust-label">doświadczenia</span>
-                </div>
+                <div class="hero__trust-item"><span class="hero__trust-number">Tysiące</span><span class="hero__trust-label">wszczepionych implantów</span></div>
                 <div class="hero__trust-divider"></div>
-                <div class="hero__trust-item">
-                    <span class="hero__trust-number">4.9/5</span>
-                    <span class="hero__trust-label">ocena pacjentów</span>
-                </div>
+                <div class="hero__trust-item"><span class="hero__trust-number">4.9/5</span><span class="hero__trust-label">w&nbsp;87 opiniach</span></div>
             </div>
         </div>
-        <div class="hero__scroll-indicator">
-            <span>Zobacz filmy pacjentów</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-        </div>
+        <div class="hero__scroll-indicator"><span>Dowiedz się więcej</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
     </header>
 
-    <!-- ===== PROBLEM SECTION ===== -->
+    <!-- ===== 2. PROBLEM ===== -->
     <section class="problem" id="problem">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Czy to Twoja historia?</span>
-                <h2 class="section-title">Bezzębie to nie wyrok</h2>
-                <p class="section-desc">Wielu naszych pacjentów latami żyło z ruchomą protezą, myśląc że nie ma innego wyjścia. Nic bardziej mylnego.</p>
+                <span class="section-tag">Czy to brzmi znajomo?</span>
+                <h2 class="section-title">Masz dość ruchomej protezy? Jest wyjście.</h2>
+                <p class="section-desc">Wielu naszych pacjentów nosiło ruchomą protezę latami. Myśleli, że nie ma innego wyjścia. Ale jest.</p>
             </div>
             <div class="problem__grid">
                 <div class="problem__card">
-                    <div class="problem__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2M9 9h.01M15 9h.01"/></svg>
-                    </div>
+                    <div class="problem__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2M9 9h.01M15 9h.01"/></svg></div>
                     <h3>Proteza się rusza?</h3>
                     <p>Boisz się jeść przy ludziach, bo proteza może wypaść. Unikasz twardych potraw, które kochasz.</p>
                 </div>
                 <div class="problem__card">
-                    <div class="problem__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M20 12a8 8 0 0 0-8-8v8h8z" opacity=".3"/></svg>
-                    </div>
+                    <div class="problem__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M20 12a8 8 0 0 0-8-8v8h8z" opacity=".3"/></svg></div>
                     <h3>Zanik kości?</h3>
-                    <p>Im dłużej nosisz ruchomą protezę, tym bardziej zanika kość. To prowadzi do coraz gorszego dopasowania.</p>
+                    <p>Im dłużej nosisz ruchomą protezę, tym bardziej zanika kość. Implant zatrzymuje ten proces.</p>
                 </div>
                 <div class="problem__card">
-                    <div class="problem__icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 12h8M12 8v8"/><circle cx="12" cy="12" r="10"/></svg>
-                    </div>
-                    <h3>Za stary na implanty?</h3>
-                    <p>To mit! Implanty są dla osób w każdym wieku. Nasi pacjenci 60, 70, 80+ odzyskują pełne uzębienie.</p>
+                    <div class="problem__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 12h8M12 8v8"/><circle cx="12" cy="12" r="10"/></svg></div>
+                    <h3>Za stary na implanty? To mit!</h3>
+                    <p>Nasi pacjenci 60, 70, 80+ odzyskują pełne uzębienie. Liczy się stan zdrowia, nie wiek.</p>
                 </div>
             </div>
+            <p style="text-align:center; margin-top:var(--space-xl); color:var(--gray-500); font-size:var(--text-base); max-width:600px; margin-left:auto; margin-right:auto;">Boisz się dentysty? To normalne. Wielu naszych pacjentów też się bało. Pracujemy w&nbsp;spokojnym tempie, tłumacząc każdy krok. Nie oceniamy — pomagamy.</p>
         </div>
     </section>
 
-    <!-- ===== VIDEO SECTION - MAIN REELS ===== -->
+    <!-- ===== 3. FILMY (3 kluczowe) ===== -->
     <section class="videos" id="filmy">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Obejrzyj i przekonaj się</span>
-                <h2 class="section-title">Obalamy mity o bezzębiu</h2>
-                <p class="section-desc">Dr Przybysz odpowiada na pytania pacjentów — prosto, bez żargonu.</p>
+                <span class="section-tag">Odpowiadamy na Twoje pytania</span>
+                <h2 class="section-title">Dr Przybysz mówi prosto, bez żargonu</h2>
             </div>
-
             <div class="videos__carousel-wrap">
-                <button class="videos__carousel-btn videos__carousel-btn--prev" aria-label="Poprzedni film" onclick="document.getElementById('videoGrid').scrollBy({left:-240,behavior:'smooth'})">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
-                </button>
+                <button class="videos__carousel-btn videos__carousel-btn--prev" aria-label="Poprzedni film" onclick="document.getElementById('videoGrid').scrollBy({left:-240,behavior:'smooth'})"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
                 <div class="videos__grid videos__grid--compact" id="videoGrid">
-                    <div class="video-card">
-                        <a href="https://www.youtube.com/shorts/XXCJFQTa9Dk" target="_blank" rel="noopener" class="video-card__embed video-card__link">
-                            <img src="https://i.ytimg.com/vi/XXCJFQTa9Dk/oar2.jpg" alt="Ruchoma proteza to nie jedyne wyjście" loading="lazy">
-                            <div class="video-card__play">
-                                <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
-                            </div>
-                        </a>
-                        <div class="video-card__content">
-                            <h3>Ruchoma proteza to nie jedyne wyjście</h3>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <a href="https://www.youtube.com/shorts/AHQtxBne0Kg" target="_blank" rel="noopener" class="video-card__embed video-card__link">
-                            <img src="https://i.ytimg.com/vi/AHQtxBne0Kg/oar2.jpg" alt="Nie mam zębów = muszę żyć z protezą?" loading="lazy">
-                            <div class="video-card__play">
-                                <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
-                            </div>
-                        </a>
-                        <div class="video-card__content">
-                            <h3>Nie mam zębów = muszę żyć z protezą?</h3>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <a href="https://www.youtube.com/shorts/gpohL0eAMmo" target="_blank" rel="noopener" class="video-card__embed video-card__link">
-                            <img src="https://i.ytimg.com/vi/gpohL0eAMmo/oar2.jpg" alt="Implant musi boleć? Sprawdź!" loading="lazy">
-                            <div class="video-card__play">
-                                <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
-                            </div>
-                        </a>
-                        <div class="video-card__content">
-                            <h3>Czy implant musi boleć?</h3>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <a href="https://www.youtube.com/shorts/JrxRyVrzIwE" target="_blank" rel="noopener" class="video-card__embed video-card__link">
-                            <img src="https://i.ytimg.com/vi/JrxRyVrzIwE/oar2.jpg" alt="Przypadek pacjentki - efekt leczenia" loading="lazy">
-                            <div class="video-card__play">
-                                <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
-                            </div>
-                        </a>
-                        <div class="video-card__content">
-                            <h3>Efekt leczenia - historia pacjentki</h3>
-                        </div>
-                    </div>
-
-                    <div class="video-card">
-                        <a href="https://www.youtube.com/shorts/NSyHzWpNJeA" target="_blank" rel="noopener" class="video-card__embed video-card__link">
-                            <img src="https://i.ytimg.com/vi/NSyHzWpNJeA/oar2.jpg" alt="Jak działa implant?" loading="lazy">
-                            <div class="video-card__play">
-                                <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
-                            </div>
-                        </a>
-                        <div class="video-card__content">
-                            <h3>Jak działa implant?</h3>
-                        </div>
-                    </div>
+                    <div class="video-card"><a href="https://www.youtube.com/shorts/XXCJFQTa9Dk" target="_blank" rel="noopener" class="video-card__embed video-card__link"><img src="https://i.ytimg.com/vi/XXCJFQTa9Dk/oar2.jpg" alt="Ruchoma proteza to nie jedyne wyjście" loading="lazy"><div class="video-card__play"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></div></a><div class="video-card__content"><h3>Ruchoma proteza to nie jedyne wyjście</h3></div></div>
+                    <div class="video-card"><a href="https://www.youtube.com/shorts/gpohL0eAMmo" target="_blank" rel="noopener" class="video-card__embed video-card__link"><img src="https://i.ytimg.com/vi/gpohL0eAMmo/oar2.jpg" alt="Czy implant musi boleć?" loading="lazy"><div class="video-card__play"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></div></a><div class="video-card__content"><h3>Czy implant musi boleć?</h3></div></div>
+                    <div class="video-card"><a href="https://www.youtube.com/shorts/JrxRyVrzIwE" target="_blank" rel="noopener" class="video-card__embed video-card__link"><img src="https://i.ytimg.com/vi/JrxRyVrzIwE/oar2.jpg" alt="Efekt leczenia - historia pacjentki" loading="lazy"><div class="video-card__play"><svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg></div></a><div class="video-card__content"><h3>Efekt leczenia — historia pacjentki</h3></div></div>
                 </div>
-                <button class="videos__carousel-btn videos__carousel-btn--next" aria-label="Następny film" onclick="document.getElementById('videoGrid').scrollBy({left:240,behavior:'smooth'})">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
-                </button>
+                <button class="videos__carousel-btn videos__carousel-btn--next" aria-label="Następny film" onclick="document.getElementById('videoGrid').scrollBy({left:240,behavior:'smooth'})"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
             </div>
-
-            <div class="videos__more">
-                <a href="https://www.youtube.com/@LDClinic_dentysta/shorts" target="_blank" rel="noopener" class="btn btn--outline">
-                    Więcej filmów na YouTube
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                </a>
-            </div>
-
-            <!-- Pośrednie CTA po filmach -->
-            <div class="videos__cta">
-                <p class="videos__cta-text">Masz pytania? Porozmawiaj z nami.</p>
-                <div class="videos__cta-buttons">
-                    <a href="#formularz" class="btn btn--primary btn--lg">Zostaw numer - oddzwonimy</a>
-                    <a href="tel:+48724809025" class="btn btn--outline btn--lg">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        Zadzwoń teraz
-                    </a>
-                </div>
-            </div>
+            <div class="videos__more"><a href="https://www.youtube.com/@LDClinic_dentysta/shorts" target="_blank" rel="noopener" class="btn btn--outline">Więcej filmów na YouTube<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></a></div>
         </div>
     </section>
 
-    <!-- ===== PROCESS / ETAPY ===== -->
+    <!-- ===== 4. JAK LECZYMY (Etapy + SAFE ARCH) ===== -->
     <section class="process" id="etapy">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Jak to wygląda?</span>
-                <h2 class="section-title">Twoja droga do nowego uśmiechu</h2>
-                <p class="section-desc">Od pierwszej wizyty do stałych zębów. Przejrzysty plan, zero niespodzianek.</p>
+                <h2 class="section-title">Od pierwszej wizyty do nowego uśmiechu</h2>
+                <p class="section-desc">Przejrzysty plan — bez niespodzianek, bez pospieszania.</p>
             </div>
-
-            <div class="process__timeline">
-                <div class="process__line"></div>
-
-                <div class="process__step" data-step="1">
-                    <div class="process__step-marker">
-                        <span class="process__step-number">01</span>
-                    </div>
-                    <div class="process__step-content">
-                        <div class="process__step-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        </div>
-                        <h3>Konsultacja + plan leczenia</h3>
-                        <p>Na wizycie robimy tomografię 3D i&nbsp;od razu przedstawiamy plan leczenia z&nbsp;kosztami.</p>
-                        <span class="process__step-time">Wizyta 45-60 min</span>
-                    </div>
-                </div>
-
-                <div class="process__step" data-step="2">
-                    <div class="process__step-marker">
-                        <span class="process__step-number">02</span>
-                    </div>
-                    <div class="process__step-content">
-                        <div class="process__step-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
-                        </div>
-                        <h3>Zabieg implantacji</h3>
-                        <p>Bezbolesny zabieg w znieczuleniu. Precyzyjna implantacja z wykorzystaniem nawigacji 3D. Tymczasowe zęby tego samego dnia.</p>
-                        <span class="process__step-time">Zabieg 1-3h</span>
-                    </div>
-                </div>
-
-                <div class="process__step" data-step="3">
-                    <div class="process__step-marker">
-                        <span class="process__step-number">03</span>
-                    </div>
-                    <div class="process__step-content">
-                        <div class="process__step-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        </div>
-                        <h3>Nowy uśmiech</h3>
-                        <p>Po okresie gojenia - stałe, piękne zęby. Wyglądają i działają jak naturalne. Jesz co chcesz, uśmiechasz się bez skrępowania.</p>
-                        <span class="process__step-time">Efekt na lata</span>
-                    </div>
-                </div>
+            <div class="process__timeline"><div class="process__line"></div>
+                <div class="process__step" data-step="1"><div class="process__step-marker"><span class="process__step-number">01</span></div><div class="process__step-content"><div class="process__step-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><h3>Konsultacja + plan leczenia</h3><p>Robimy zdjęcie 3D, oceniamy stan kości i&nbsp;przedstawiamy opcje z&nbsp;cenami. Bez oceniania. Bez pospieszania.</p><span class="process__step-time">Wizyta 45-60 min · 150 zł</span></div></div>
+                <div class="process__step" data-step="2"><div class="process__step-marker"><span class="process__step-number">02</span></div><div class="process__step-content"><div class="process__step-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg></div><h3>Zabieg implantacji</h3><p>Zabieg w&nbsp;znieczuleniu — nie czujesz bólu w&nbsp;trakcie. Precyzyjne planowanie komputerowe. Tymczasowe zęby tego samego dnia. Po zabiegu może wystąpić lekki obrzęk — to normalne i&nbsp;mija w&nbsp;2-3 dni.</p><span class="process__step-time">Zabieg 1-3h</span></div></div>
+                <div class="process__step" data-step="3"><div class="process__step-marker"><span class="process__step-number">03</span></div><div class="process__step-content"><div class="process__step-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3>Stałe, piękne zęby</h3><p>Po okresie gojenia (4-6 mies.) zakładamy stałe zęby. Wyglądają i&nbsp;działają jak naturalne. Jesz co chcesz, uśmiechasz się bez skrępowania. Nie chodzisz bez zębów ani jednego dnia.</p><span class="process__step-time">Efekt na lata</span></div></div>
+            </div>
+            <div style="text-align:center; margin-top:var(--space-2xl); padding:var(--space-xl); background:var(--white); border-radius:var(--radius-lg); border:1px solid var(--gray-200); max-width:700px; margin-left:auto; margin-right:auto;">
+                <h3 style="font-family:var(--font-heading); font-size:var(--text-xl); color:var(--gray-900); margin-bottom:var(--space-sm);">Nasza metoda: SAFE ARCH</h3>
+                <p style="color:var(--gray-600); margin-bottom:var(--space-md);">Stałe zęby na 6 implantach zamiast ruchomej protezy. Wszystko zaplanowane z&nbsp;góry, bez niespodzianek.</p>
+                <p style="color:var(--gray-500); font-size:var(--text-sm);">Technologia laserowa przyspieszająca gojenie · Zazwyczaj 3-5 wizyt w ciągu 4-6 miesięcy</p>
             </div>
         </div>
     </section>
 
-    <!-- ===== SAFE ARCH HIGHLIGHT ===== -->
-    <section class="safearch" id="safe-arch">
-        <div class="container">
-            <div class="safearch__inner">
-                <div class="safearch__content">
-                    <span class="section-tag">Nasza metoda</span>
-                    <h2 class="section-title">SAFE ARCH</h2>
-                    <p class="safearch__lead">Przewidywalna, bezpieczna i zaplanowana metoda leczenia bezzębia.</p>
-                    <ul class="safearch__list">
-                        <li>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Stałe zęby na implantach - koniec z ruchomą protezą</span>
-                        </li>
-                        <li>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Nawigacja 3D - milimetrowa precyzja</span>
-                        </li>
-                        <li>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Tymczasowe zęby w dniu zabiegu</span>
-                        </li>
-                        <li>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Bezbolesne leczenie z technologią laserową</span>
-                        </li>
-                        <li>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            <span>Jasny plan i koszty od samego początku</span>
-                        </li>
-                    </ul>
-                    <a href="#formularz" class="btn btn--primary btn--lg">Dowiedz się więcej na konsultacji</a>
-                </div>
-                <div class="safearch__video">
-                    <a href="https://www.youtube.com/shorts/XXCJFQTa9Dk" target="_blank" rel="noopener" class="safearch__video-wrapper video-card__link">
-                        <img src="https://i.ytimg.com/vi/XXCJFQTa9Dk/oar2.jpg" alt="SAFE ARCH - koniec z ruchomą protezą" loading="lazy">
-                        <div class="video-card__play video-card__play--lg">
-                            <svg viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== DOCTOR ===== -->
+    <!-- ===== 5. DOKTOR ===== -->
     <section class="doctor" id="doktor">
         <div class="container">
             <div class="doctor__inner">
                 <div class="doctor__photo">
                     <img src="img/magda-przybysz.jpg?v=2" alt="dr Magdalena Przybysz – specjalista implantologii, Laser Dental Clinic Warszawa" class="doctor__photo-img" loading="lazy">
-                    <a href="https://www.youtube.com/shorts/pxRVv4NLNE8" target="_blank" rel="noopener" class="doctor__play-link" title="Obejrzyj film: Poznajmy się">
-                        <svg viewBox="0 0 68 48" width="48" height="34"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
-                        <span>Obejrzyj film</span>
-                    </a>
+                    <a href="https://www.youtube.com/shorts/pxRVv4NLNE8" target="_blank" rel="noopener" class="doctor__play-link" title="Obejrzyj film: Poznajmy się"><svg viewBox="0 0 68 48" width="48" height="34"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg><span>Obejrzyj film</span></a>
                 </div>
                 <div class="doctor__content">
-                    <span class="section-tag">Twój lekarz</span>
+                    <span class="section-tag">Kto Cię leczy?</span>
                     <h2 class="section-title">dr Magdalena Przybysz</h2>
                     <p class="doctor__lead">Specjalista implantologii, laseroterapii i&nbsp;protetyki. Prowadzi pacjenta od&nbsp;pierwszej wizyty do&nbsp;nowego uśmiechu.</p>
-                    <div class="doctor__stats">
-                        <div class="doctor__stat">
-                            <span class="doctor__stat-number">20+</span>
-                            <span class="doctor__stat-label">lat doświadczenia</span>
-                        </div>
-                        <div class="doctor__stat">
-                            <span class="doctor__stat-number">Tysiące</span>
-                            <span class="doctor__stat-label">wszczepionych implantów</span>
-                        </div>
-                    </div>
-                    <blockquote class="doctor__quote">
-                        Moim celem jest, aby pacjent na każdym etapie leczenia czuł się pewnie.
-                    </blockquote>
+                    <div class="doctor__stats"><div class="doctor__stat"><span class="doctor__stat-number">20+</span><span class="doctor__stat-label">lat doświadczenia</span></div><div class="doctor__stat"><span class="doctor__stat-number">Tysiące</span><span class="doctor__stat-label">wszczepionych implantów</span></div></div>
+                    <blockquote class="doctor__quote">Moim celem jest, aby pacjent na każdym etapie leczenia czuł się pewnie.</blockquote>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== OPINIE PACJENTÓW ===== -->
+    <!-- ===== 6. OPINIE (3 najsilniejsze) ===== -->
     <section class="reviews" id="opinie">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Opinie pacjentów</span>
-                <h2 class="section-title">87 opinii, ocena 4.9/5</h2>
-                <p class="section-desc">57 opinii na ZnanyLekarz i 30 na Google Maps. Przeczytaj, co mówią nasi pacjenci.</p>
+                <h2 class="section-title">Nasi pacjenci mówią o&nbsp;nas — 4.9/5</h2>
+                <p class="section-desc">87 opinii na ZnanyLekarz i&nbsp;Google Maps.</p>
             </div>
-
             <div class="reviews__grid">
-                <div class="reviews__card">
-                    <div class="reviews__stars">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="reviews__text">Pani Dr dobrze opracowuje plan leczenia i wszystko wyjaśnia. Wydawało mi się, że mój przypadek jest beznadziejny, bo nikt przed Dr Przybysz nie chciał mi pomóc. Pani Dr nie dość, że przyjęła mnie bez wahania, to doskonale wiedziała jak się mną zająć.</p>
-                    <div class="reviews__author">
-                        <span class="reviews__name">AW</span>
-                        <span class="reviews__source">ZnanyLekarz &middot; Zweryfikowana wizyta</span>
-                    </div>
-                </div>
-
-                <div class="reviews__card">
-                    <div class="reviews__stars">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="reviews__text">Na mojej drodze pojawił się Anioł. Wyjaśnienia precyzyjne, konkretne, dostosowane do mnie. Moja droga dopiero się zaczyna... wierzę że się uda.</p>
-                    <div class="reviews__author">
-                        <span class="reviews__name">Katarzyna</span>
-                        <span class="reviews__source">ZnanyLekarz &middot; Konsultacja implantologiczna</span>
-                    </div>
-                </div>
-
-                <div class="reviews__card">
-                    <div class="reviews__stars">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="reviews__text">Pani doktor ma podejście do pacjenta jakiego nie widziałem nigdzie. Zero bólu, zero stresu. Cały skład Laser Dental Cliniq to zespół 10/10. Polecam z czystym sumieniem!</p>
-                    <div class="reviews__author">
-                        <span class="reviews__name">Maciej</span>
-                        <span class="reviews__source">Google Maps</span>
-                    </div>
-                </div>
-
-                <div class="reviews__card">
-                    <div class="reviews__stars">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="reviews__text">Z całego serca polecam panią doktor Przybysz. Osoba profesjonalna z ogromną wiedzą i empatią. Leczenie przebiegło bezproblemowo, a efekty są wspaniałe.</p>
-                    <div class="reviews__author">
-                        <span class="reviews__name">Monika K</span>
-                        <span class="reviews__source">ZnanyLekarz &middot; Zweryfikowana wizyta</span>
-                    </div>
-                </div>
-
-                <div class="reviews__card">
-                    <div class="reviews__stars">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="reviews__text">Jako osoba panicznie bojąca się słowa stomatolog i wszystkiego co z tym związane, mogę zapewnić, że lekarze tam pracujący są świetni, wyrozumiali, empatyczni, z ogromnym poczuciem humoru.</p>
-                    <div class="reviews__author">
-                        <span class="reviews__name">Kasia</span>
-                        <span class="reviews__source">Google Maps</span>
-                    </div>
-                </div>
-
-                <div class="reviews__card">
-                    <div class="reviews__stars">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="reviews__text">Wizyta była bardzo wspierająca i pomocna. Dziękuję za wsparcie i wyrozumiałość.</p>
-                    <div class="reviews__author">
-                        <span class="reviews__name">Anna D</span>
-                        <span class="reviews__source">ZnanyLekarz &middot; Zweryfikowana wizyta</span>
-                    </div>
-                </div>
+                <div class="reviews__card"><div class="reviews__stars"><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="reviews__text">Pani Dr dobrze opracowuje plan leczenia i wszystko wyjaśnia. Wydawało mi się, że mój przypadek jest beznadziejny, bo nikt przed Dr Przybysz nie chciał mi pomóc. Pani Dr nie dość, że przyjęła mnie bez wahania, to doskonale wiedziała jak się mną zająć.</p><div class="reviews__author"><span class="reviews__name">AW</span><span class="reviews__source">ZnanyLekarz &middot; Zweryfikowana wizyta</span></div></div>
+                <div class="reviews__card"><div class="reviews__stars"><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="reviews__text">Jako osoba panicznie bojąca się słowa stomatolog i wszystkiego co z tym związane, mogę zapewnić, że lekarze tam pracujący są świetni, wyrozumiali, empatyczni, z ogromnym poczuciem humoru.</p><div class="reviews__author"><span class="reviews__name">Kasia</span><span class="reviews__source">Google Maps</span></div></div>
+                <div class="reviews__card"><div class="reviews__stars"><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><p class="reviews__text">Pani doktor ma podejście do pacjenta jakiego nie widziałem nigdzie. Zero bólu, zero stresu. Cały skład Laser Dental Cliniq to zespół 10/10. Polecam z czystym sumieniem!</p><div class="reviews__author"><span class="reviews__name">Maciej</span><span class="reviews__source">Google Maps</span></div></div>
             </div>
-
             <div class="reviews__links">
-                <a href="https://www.znanylekarz.pl/magdalena-przybysz/stomatolog/warszawa#profile-reviews" target="_blank" rel="noopener" class="reviews__link">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    57 opinii na ZnanyLekarz
-                </a>
-                <a href="https://maps.app.goo.gl/3Z9HbcBiW72dL41Y6" target="_blank" rel="noopener" class="reviews__link">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                    30 opinii na Google Maps
-                </a>
+                <a href="https://www.znanylekarz.pl/magdalena-przybysz/stomatolog/warszawa#profile-reviews" target="_blank" rel="noopener" class="reviews__link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>57 opinii na ZnanyLekarz</a>
+                <a href="https://maps.app.goo.gl/3Z9HbcBiW72dL41Y6" target="_blank" rel="noopener" class="reviews__link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>30 opinii na Google Maps</a>
             </div>
-
-            <!-- Pośrednie CTA po opiniach -->
-            <div class="reviews__cta">
-                <p>Dołącz do grona zadowolonych pacjentów.</p>
-                <a href="#formularz" class="btn btn--primary btn--lg">Umów konsultację</a>
-            </div>
+            <div class="reviews__cta"><a href="#formularz" class="btn btn--primary btn--lg">Umów konsultację</a></div>
         </div>
     </section>
 
-    <!-- ===== ILE TO KOSZTUJE? ===== -->
+    <!-- ===== 7. CENNIK (skrócony + drogowskaz) ===== -->
     <section class="pricing" id="cennik">
         <div class="container">
-            <div class="pricing__inner">
-                <div class="pricing__content">
-                    <span class="section-tag">Kwestia finansowa</span>
-                    <h2 class="section-title">Ile kosztuje leczenie bezzębia?</h2>
-                    <p class="pricing__lead">Dokładną wycenę przygotowujemy na konsultacji. Orientacyjne ceny:</p>
-                    <ul class="pricing__list">
-                        <li>
-                            <span class="pricing__item-name">Konsultacja z planem leczenia</span>
-                            <span class="pricing__item-price">150 zł</span>
-                        </li>
-                        <li>
-                            <span class="pricing__item-name">Implant</span>
-                            <span class="pricing__item-price">od 3 500 zł</span>
-                        </li>
-                        <li>
-                            <span class="pricing__item-name">Korona na implancie</span>
-                            <span class="pricing__item-price">3 700 zł</span>
-                        </li>
-                        <li>
-                            <span class="pricing__item-name">Proteza na 2 implantach</span>
-                            <span class="pricing__item-price">od 13 000 zł</span>
-                        </li>
-                        <li>
-                            <span class="pricing__item-name">Proteza na 6 implantach</span>
-                            <span class="pricing__item-price">od 20 000 zł</span>
-                        </li>
-                        <li class="pricing__item--highlight">
-                            <span class="pricing__item-name">Pełny łuk na 6 implantach (SAFE ARCH)</span>
-                            <span class="pricing__item-price">od 35 000 zł</span>
-                        </li>
-                        <li>
-                            <span class="pricing__item-name">Odbudowa kości</span>
-                            <span class="pricing__item-price">od 3 000 zł</span>
-                        </li>
-                        <li>
-                            <span class="pricing__item-name">Podniesienie zatoki</span>
-                            <span class="pricing__item-price">od 3 000 zł</span>
-                        </li>
-                    </ul>
-                    <p class="pricing__note">Raty i&nbsp;indywidualne plany płatności.</p>
-                    <a href="#formularz" class="btn btn--primary btn--lg">Umów konsultację i poznaj cenę</a>
+            <div class="pricing__inner"><div class="pricing__content">
+                <span class="section-tag">Kwestia finansowa</span>
+                <h2 class="section-title">Ile to kosztuje?</h2>
+                <p class="pricing__lead">Dokładną wycenę przygotowujemy na konsultacji (150&nbsp;zł). Orientacyjne ceny:</p>
+                <div style="background:var(--off-white); padding:var(--space-lg); border-radius:var(--radius-md); margin-bottom:var(--space-xl); border-left:3px solid var(--accent);">
+                    <p style="font-weight:600; color:var(--gray-800); margin-bottom:var(--space-sm); font-size:var(--text-base);">Która opcja jest dla mnie?</p>
+                    <p style="color:var(--gray-600); font-size:var(--text-sm); line-height:1.6; margin-bottom:0.3rem;">Brakuje <strong>1 zęba</strong> → Implant + korona</p>
+                    <p style="color:var(--gray-600); font-size:var(--text-sm); line-height:1.6; margin-bottom:0.3rem;">Brakuje <strong>kilku zębów</strong> → Most na implantach</p>
+                    <p style="color:var(--gray-600); font-size:var(--text-sm); line-height:1.6;">Brakuje <strong>wszystkich zębów</strong> → SAFE ARCH (stałe zęby na 6 implantach)</p>
                 </div>
-            </div>
+                <ul class="pricing__list">
+                    <li><span class="pricing__item-name">Konsultacja z planem leczenia</span><span class="pricing__item-price">150 zł</span></li>
+                    <li><span class="pricing__item-name">Implant <span style="font-weight:400;color:var(--gray-400);font-size:var(--text-xs);">— brakuje 1 zęba</span></span><span class="pricing__item-price">od 3 500 zł</span></li>
+                    <li><span class="pricing__item-name">Korona na implancie <span style="font-weight:400;color:var(--gray-400);font-size:var(--text-xs);">— widoczna część zęba</span></span><span class="pricing__item-price">3 700 zł</span></li>
+                    <li class="pricing__item--highlight"><span class="pricing__item-name">SAFE ARCH — stałe zęby na 6 implantach</span><span class="pricing__item-price">od 35 000 zł</span></li>
+                    <li><span class="pricing__item-name">Odbudowa kości / podniesienie zatoki</span><span class="pricing__item-price">od 3 000 zł</span></li>
+                </ul>
+                <p class="pricing__note">Raty i&nbsp;indywidualne plany płatności. Na konsultacji otrzymasz dokładny kosztorys dopasowany do Twojej sytuacji.</p>
+            </div></div>
         </div>
     </section>
 
-    <!-- ===== FAQ ===== -->
+    <!-- ===== 8. FAQ (9 pytań — w tym 2 nowe) ===== -->
     <section class="faq" id="faq">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Najczęstsze pytania</span>
-                <h2 class="section-title">Odpowiedzi na Twoje wątpliwości</h2>
-            </div>
+            <div class="section-header"><span class="section-tag">Najczęstsze pytania</span><h2 class="section-title">Często pytacie — odpowiadamy</h2></div>
             <div class="faq__list">
-                <details class="faq__item" open>
-                    <summary class="faq__question">Czy implanty są dla osób po 60., 70. czy 80. roku życia?</summary>
-                    <div class="faq__answer">
-                        <p>Tak! Nie ma górnej granicy wieku dla implantów. Nasi najstarsi pacjenci mają ponad 80 lat i cieszą się stałymi zębami. Kluczowy jest ogólny stan zdrowia, nie wiek - a to oceniamy na konsultacji. <a href="artykuly/025-implanty-a-wiek.html">Przeczytaj więcej o implantach a wieku</a>.</p>
-                    </div>
-                </details>
-                <details class="faq__item">
-                    <summary class="faq__question">Czy zabieg implantacji boli?</summary>
-                    <div class="faq__answer">
-                        <p>Nie. Zabieg odbywa się w znieczuleniu miejscowym - nie czujesz bólu. Wielu pacjentów mówi, że było to mniej bolesne niż wyrwanie zęba. Stosujemy też technologię laserową, która przyspiesza gojenie. <a href="artykuly/036-czy-implantacja-boli.html">Przeczytaj więcej</a>.</p>
-                    </div>
-                </details>
-                <details class="faq__item">
-                    <summary class="faq__question">Ile kosztują implanty? Czy są raty?</summary>
-                    <div class="faq__answer">
-                        <p>Pojedynczy implant z koroną od 4 500 zł, pełny łuk SAFE ARCH od 35 000 zł. Oferujemy raty i indywidualne plany płatności. Dokładną cenę poznasz na bezpłatnej konsultacji. <a href="artykuly/082-finansowanie-implantow.html">Przeczytaj o finansowaniu</a>.</p>
-                    </div>
-                </details>
-                <details class="faq__item">
-                    <summary class="faq__question">Mam cukrzycę / osteoporozę - czy mogę mieć implanty?</summary>
-                    <div class="faq__answer">
-                        <p>W większości przypadków tak. Cukrzyca i osteoporoza nie są bezwzględnym przeciwwskazaniem. Ważne jest, aby choroba była kontrolowana. Na konsultacji ocenimy Twój indywidualny przypadek. <a href="artykuly/026-implanty-przy-cukrzycy.html">Więcej o cukrzycy</a> | <a href="artykuly/027-implanty-a-osteoporoza.html">Więcej o osteoporozie</a>.</p>
-                    </div>
-                </details>
-                <details class="faq__item">
-                    <summary class="faq__question">Ile trwa leczenie od konsultacji do stałych zębów?</summary>
-                    <div class="faq__answer">
-                        <p>Tymczasowe zęby otrzymujesz w dniu zabiegu - nigdy nie wychodzisz bez zębów. Stałe, ostateczne uzupełnienie montujemy po 4-6 miesiącach gojenia (osteointegracji). <a href="artykuly/086-plan-leczenia-etapy.html">Zobacz plan leczenia krok po kroku</a>.</p>
-                    </div>
-                </details>
-                <details class="faq__item">
-                    <summary class="faq__question">Czy organizm może odrzucić implant?</summary>
-                    <div class="faq__answer">
-                        <p>Implanty wykonane są z tytanu - materiału biokompatybilnego. Organizm nie rozpoznaje go jako ciało obce. Skuteczność implantacji wynosi 95-98%. <a href="artykuly/054-mit-organizm-odrzuci-implant.html">Przeczytaj więcej o tym micie</a>.</p>
-                    </div>
-                </details>
-                <details class="faq__item">
-                    <summary class="faq__question">Mam za mało kości - czy implanty są możliwe?</summary>
-                    <div class="faq__answer">
-                        <p>Tak! Stosujemy augmentację kości, podniesienie dna zatoki szczękowej (sinus lift) oraz implanty zygomatyczne. Metoda SAFE ARCH jest zaprojektowana tak, by działać nawet przy znacznym zaniku kości. <a href="artykuly/056-mit-za-malo-kosci-na-implanty.html">Przeczytaj więcej</a>.</p>
-                    </div>
-                </details>
-                <details class="faq__item">
-                    <summary class="faq__question">Jak długo służą implanty?</summary>
-                    <div class="faq__answer">
-                        <p>Przy prawidłowej higienie implanty służą całe życie. Sam implant (śruba tytanowa) jest praktycznie niezniszczalny. Korona protetyczna może wymagać wymiany po 15-20 latach. <a href="artykuly/030-jak-dlugo-sluza-implanty.html">Przeczytaj więcej</a>.</p>
-                    </div>
-                </details>
+                <details class="faq__item" open><summary class="faq__question">Czy implanty są dla osób po 60., 70. czy 80. roku życia?</summary><div class="faq__answer"><p>Tak! Nie ma górnej granicy wieku. Nasi najstarsi pacjenci mają ponad 80 lat. Kluczowy jest ogólny stan zdrowia, nie wiek — a&nbsp;to oceniamy na konsultacji. <a href="artykuly/025-implanty-a-wiek.html">Przeczytaj więcej</a>.</p></div></details>
+                <details class="faq__item"><summary class="faq__question">Czy zabieg boli?</summary><div class="faq__answer"><p>Zabieg odbywa się w znieczuleniu miejscowym — nie czujesz bólu w&nbsp;trakcie. Wielu pacjentów mówi, że było to łatwiejsze niż wyrwanie zęba. Stosujemy technologię laserową, która przyspiesza gojenie. <a href="artykuly/036-czy-implantacja-boli.html">Przeczytaj więcej</a>.</p></div></details>
+                <details class="faq__item"><summary class="faq__question">Ile kosztują implanty? Czy są raty?</summary><div class="faq__answer"><p>Pojedynczy implant od 3&nbsp;500 zł, korona 3&nbsp;700 zł, pełny łuk SAFE ARCH od 35&nbsp;000 zł. Oferujemy raty i&nbsp;indywidualne plany płatności. Dokładną cenę poznasz na konsultacji (150&nbsp;zł). <a href="artykuly/082-finansowanie-implantow.html">Przeczytaj o&nbsp;finansowaniu</a>.</p></div></details>
+                <details class="faq__item"><summary class="faq__question">Mam cukrzycę / osteoporozę — czy mogę mieć implanty?</summary><div class="faq__answer"><p>W większości przypadków tak. Ważne, aby choroba była kontrolowana. Na konsultacji ocenimy Twój indywidualny przypadek. <a href="artykuly/026-implanty-przy-cukrzycy.html">Więcej o&nbsp;cukrzycy</a> | <a href="artykuly/027-implanty-a-osteoporoza.html">Więcej o&nbsp;osteoporozie</a>.</p></div></details>
+                <details class="faq__item"><summary class="faq__question">Ile trwa leczenie i ile potrzebuję wizyt?</summary><div class="faq__answer"><p>Tymczasowe zęby otrzymujesz w dniu zabiegu — nigdy nie wychodzisz bez zębów. Stałe uzupełnienie po 4-6 miesiącach gojenia (zrastania się implantu z&nbsp;kością). Zazwyczaj 3-5 wizyt. <a href="artykuly/086-plan-leczenia-etapy.html">Plan leczenia krok po kroku</a>.</p></div></details>
+                <details class="faq__item"><summary class="faq__question">Czy organizm może odrzucić implant?</summary><div class="faq__answer"><p>Implanty z tytanu — materiału biokompatybilnego. Organizm nie rozpoznaje go jako ciało obce. Skuteczność wg badań klinicznych: 95-98%. <a href="artykuly/054-mit-organizm-odrzuci-implant.html">Przeczytaj więcej</a>.</p></div></details>
+                <details class="faq__item"><summary class="faq__question">Mam za mało kości — czy implanty są możliwe?</summary><div class="faq__answer"><p>Tak! Odbudowujemy kość specjalnymi zabiegami. Nawet jeżeli kości jest mało, mamy sprawdzone metody. SAFE ARCH jest zaprojektowany tak, by działać nawet przy znacznym zaniku kości. <a href="artykuly/056-mit-za-malo-kosci-na-implanty.html">Przeczytaj więcej</a>.</p></div></details>
+                <details class="faq__item"><summary class="faq__question">Co mogę jeść po zabiegu? Jak wygląda powrót do normalności?</summary><div class="faq__answer"><p>W dniu zabiegu dostajesz tymczasowe zęby. Przez 2-3 dni polecamy miękkie posiłki. Następnego dnia możesz normalnie funkcjonować. Po gojeniu — jesz wszystko bez ograniczeń. Przy prawidłowej higienie implanty mogą służyć wiele lat, nawet całe życie.</p></div></details>
+                <details class="faq__item"><summary class="faq__question">Co jeżeli coś pójdzie nie tak po zabiegu?</summary><div class="faq__answer"><p>Po zabiegu jesteś pod naszą opieką. Jeżeli cokolwiek Cię niepokoi — zadzwoń. Odpowiadamy tego samego dnia. Wizyty kontrolne są wliczone w&nbsp;cenę leczenia.</p></div></details>
             </div>
         </div>
     </section>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Czy implanty są dla osób po 60., 70. czy 80. roku życia?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tak! Nie ma górnej granicy wieku dla implantów. Nasi najstarsi pacjenci mają ponad 80 lat i cieszą się stałymi zębami. Kluczowy jest ogólny stan zdrowia, nie wiek."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Czy zabieg implantacji boli?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Nie. Zabieg odbywa się w znieczuleniu miejscowym - nie czujesz bólu. Wielu pacjentów mówi, że było to mniej bolesne niż wyrwanie zęba. Stosujemy też technologię laserową, która przyspiesza gojenie."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Ile kosztują implanty? Czy są raty?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Pojedynczy implant z koroną od 4 500 zł, pełny łuk SAFE ARCH od 35 000 zł. Oferujemy raty i indywidualne plany płatności. Dokładną cenę poznasz na bezpłatnej konsultacji."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Mam cukrzycę / osteoporozę - czy mogę mieć implanty?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "W większości przypadków tak. Cukrzyca i osteoporoza nie są bezwzględnym przeciwwskazaniem. Ważne jest, aby choroba była kontrolowana."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Ile trwa leczenie od konsultacji do stałych zębów?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tymczasowe zęby otrzymujesz w dniu zabiegu - nigdy nie wychodzisz bez zębów. Stałe, ostateczne uzupełnienie montujemy po 4-6 miesiącach gojenia (osteointegracji)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Czy organizm może odrzucić implant?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Implanty wykonane są z tytanu - materiału biokompatybilnego. Organizm nie rozpoznaje go jako ciało obce. Skuteczność implantacji wynosi 95-98%."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Mam za mało kości - czy implanty są możliwe?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tak! Stosujemy augmentację kości, podniesienie dna zatoki szczękowej (sinus lift) oraz implanty zygomatyczne. Metoda SAFE ARCH jest zaprojektowana tak, by działać nawet przy znacznym zaniku kości."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Jak długo służą implanty?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Przy prawidłowej higienie implanty służą całe życie. Sam implant (śruba tytanowa) jest praktycznie niezniszczalny. Korona protetyczna może wymagać wymiany po 15-20 latach."
-          }
-        }
-      ]
-    }
-    </script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy implanty są dla osób po 60., 70. czy 80. roku życia?","acceptedAnswer":{"@type":"Answer","text":"Tak! Nie ma górnej granicy wieku. Kluczowy jest ogólny stan zdrowia, nie wiek."}},{"@type":"Question","name":"Czy zabieg boli?","acceptedAnswer":{"@type":"Answer","text":"Zabieg w znieczuleniu - nie czujesz bólu w trakcie. Wielu mówi, że łatwiejsze niż wyrwanie zęba."}},{"@type":"Question","name":"Ile kosztują implanty?","acceptedAnswer":{"@type":"Answer","text":"Implant od 3 500 zł, korona 3 700 zł, SAFE ARCH od 35 000 zł. Raty dostępne. Wycena na konsultacji (150 zł)."}},{"@type":"Question","name":"Mam cukrzycę / osteoporozę - czy mogę mieć implanty?","acceptedAnswer":{"@type":"Answer","text":"W większości przypadków tak, jeżeli choroba jest kontrolowana."}},{"@type":"Question","name":"Ile trwa leczenie i ile wizyt?","acceptedAnswer":{"@type":"Answer","text":"Tymczasowe zęby w dniu zabiegu. Stałe po 4-6 mies. Zazwyczaj 3-5 wizyt."}},{"@type":"Question","name":"Czy organizm może odrzucić implant?","acceptedAnswer":{"@type":"Answer","text":"Tytan jest biokompatybilny. Skuteczność wg badań: 95-98%."}},{"@type":"Question","name":"Mam za mało kości?","acceptedAnswer":{"@type":"Answer","text":"Odbudowujemy kość specjalnymi zabiegami. SAFE ARCH działa nawet przy znacznym zaniku."}},{"@type":"Question","name":"Co mogę jeść po zabiegu?","acceptedAnswer":{"@type":"Answer","text":"Miękkie posiłki 2-3 dni, potem normalnie. Implanty mogą służyć wiele lat."}},{"@type":"Question","name":"Co jeżeli coś pójdzie nie tak?","acceptedAnswer":{"@type":"Answer","text":"Jesteś pod opieką. Odpowiadamy tego samego dnia. Kontrole wliczone w cenę."}}]}</script>
 
-    <!-- ===== SŁOWNIK POJĘĆ ===== -->
-    <section class="glossary" id="slownik" aria-label="Słownik pojęć implantologicznych">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Nie rozumiesz terminów?</span>
-                <h2 class="section-title">Krótki słownik implantologiczny</h2>
-                <p class="section-desc">Najważniejsze pojęcia prostym językiem.</p>
-            </div>
-            <div class="glossary__grid">
-                <div class="glossary__item">
-                    <dt class="glossary__term">Implant</dt>
-                    <dd class="glossary__def">Sztuczny korzeń zęba z tytanu, wkręcany w kość. Służy jako fundament dla nowego zęba. Nie boli - wszczepiany jest w znieczuleniu.</dd>
-                </div>
-                <div class="glossary__item">
-                    <dt class="glossary__term">Korona</dt>
-                    <dd class="glossary__def">Widoczna część zęba, która wygląda jak naturalny ząb. Montowana na implancie. Wykonana z ceramiki lub cyrkonu.</dd>
-                </div>
-                <div class="glossary__item">
-                    <dt class="glossary__term">Most na implantach</dt>
-                    <dd class="glossary__def">Kilka sztucznych zębów połączonych razem, opartych na implantach. Zastępuje większy brak zębów bez szlifowania zdrowych.</dd>
-                </div>
-                <div class="glossary__item">
-                    <dt class="glossary__term">SAFE ARCH / All-on-6</dt>
-                    <dd class="glossary__def">Metoda odbudowy pełnego łuku zębów (góra lub dół) na 6 implantach. Stałe zęby w jeden dzień - koniec z protezą.</dd>
-                </div>
-                <div class="glossary__item">
-                    <dt class="glossary__term">Osteointegracja</dt>
-                    <dd class="glossary__def">Zrastanie się implantu z kością. Trwa ok. 3-6 miesięcy. W tym czasie nosisz tymczasowe zęby - nie chodzisz bez.</dd>
-                </div>
-                <div class="glossary__item">
-                    <dt class="glossary__term">Proteza ruchoma</dt>
-                    <dd class="glossary__def">Tradycyjna sztuczna szczęka, zdejmowana na noc. Często się rusza, utrudnia jedzenie. Implanty to alternatywa - stałe zęby.</dd>
-                </div>
-                <div class="glossary__item">
-                    <dt class="glossary__term">Zanik kości</dt>
-                    <dd class="glossary__def">Po utracie zęba kość się kurczy, bo nie jest stymulowana. Im dłużej zwlekasz, tym mniej kości. Implant zatrzymuje ten proces.</dd>
-                </div>
-                <div class="glossary__item">
-                    <dt class="glossary__term">Tomografia 3D (CBCT)</dt>
-                    <dd class="glossary__def">Specjalne zdjęcie 3D Twoich kości. Trwa kilka sekund, nie boli. Dzięki niemu lekarz widzi dokładnie, gdzie wszczepić implant.</dd>
-                </div>
-            </div>
-            <div class="glossary__more">
-                <a href="artykuly/097-slownik-pojec-implantologia.html" class="btn btn--outline">
-                    Pełny słownik pojęć (50+ terminów)
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "DefinedTermSet",
-      "name": "Słownik pojęć implantologicznych",
-      "description": "Najważniejsze terminy związane z implantami zębowymi i leczeniem bezzębia, wyjaśnione prostym językiem.",
-      "url": "https://safe-arch.pl/#slownik",
-      "inLanguage": "pl-PL",
-      "hasDefinedTerm": [
-        {"@type": "DefinedTerm", "name": "Implant zębowy", "description": "Sztuczny korzeń zęba z tytanu, wkręcany w kość szczęki lub żuchwy."},
-        {"@type": "DefinedTerm", "name": "Korona protetyczna", "description": "Widoczna część zęba montowana na implancie, wykonana z ceramiki lub cyrkonu."},
-        {"@type": "DefinedTerm", "name": "Most na implantach", "description": "Kilka sztucznych zębów połączonych razem, opartych na implantach."},
-        {"@type": "DefinedTerm", "name": "SAFE ARCH", "description": "Metoda odbudowy pełnego łuku zębów na 6 implantach. Stałe zęby w jeden dzień."},
-        {"@type": "DefinedTerm", "name": "Osteointegracja", "description": "Proces zrastania się implantu z kością, trwający 3-6 miesięcy."},
-        {"@type": "DefinedTerm", "name": "Zanik kości", "description": "Proces kurczenia się kości po utracie zęba z powodu braku stymulacji."},
-        {"@type": "DefinedTerm", "name": "Tomografia 3D CBCT", "description": "Trójwymiarowe zdjęcie kości do planowania implantacji."},
-        {"@type": "DefinedTerm", "name": "Proteza ruchoma", "description": "Tradycyjna sztuczna szczęka zdejmowana na noc."}
-      ]
-    }
-    </script>
-
-    <!-- ===== ARTYKUŁY ===== -->
-    <section class="articles" id="artykuly">
-        <div class="container">
-            <span class="section-tag">Biblia Bezzębia</span>
-            <div class="section-header">
-                <h2>Wiedza, która pomaga podjąć decyzję</h2>
-                <p>Ponad 160 artykułów o&nbsp;implantach i&nbsp;leczeniu bezzębia. Poznaj fakty zanim zdecydujesz.</p>
-            </div>
-
-            <div class="articles__grid">
-                <a href="/artykuly/metamorfoza-safe-arch-natychmiastowa-odbudowa.html" class="articles__card articles__card--featured">
-                    <span class="articles__card-tag articles__card-tag--accent">Metamorfoza</span>
-                    <h3>Stałe zęby w&nbsp;4 miesiące metodą SAFE&nbsp;ARCH</h3>
-                    <p>Od brakujących zębów przednich do pięknego uśmiechu. Prawdziwa historia pacjentki.</p>
-                    <span class="articles__card-link">Zobacz metamorfozę →</span>
-                </a>
-                <a href="/artykuly/metamorfoza-safe-arch-kompleksowa-odbudowa.html" class="articles__card articles__card--featured">
-                    <span class="articles__card-tag articles__card-tag--accent">Metamorfoza</span>
-                    <h3>Koniec z&nbsp;protezą po 15&nbsp;latach — metoda SAFE&nbsp;ARCH</h3>
-                    <p>Pacjentka nosiła protezę ruchomą ponad 15 lat. Dziś ma stałe zęby na implantach.</p>
-                    <span class="articles__card-link">Zobacz metamorfozę →</span>
-                </a>
-                <a href="/artykuly/metamorfoza-pokonanie-leku-przed-dentysta.html" class="articles__card articles__card--featured">
-                    <span class="articles__card-tag articles__card-tag--accent">Metamorfoza</span>
-                    <h3>Pokonanie lęku przed dentystą — pełna metamorfoza</h3>
-                    <p>Od silnego lęku i&nbsp;jednego braku do kompletnej odbudowy i&nbsp;pewnego uśmiechu.</p>
-                    <span class="articles__card-link">Zobacz metamorfozę →</span>
-                </a>
-                <a href="/artykuly/019-proteza-a-implanty-porownanie.html" class="articles__card">
-                    <span class="articles__card-tag">Porównanie</span>
-                    <h3>Proteza czy implanty — co&nbsp;wybrać?</h3>
-                    <p>Uczciwe porównanie kosztów, komfortu i&nbsp;trwałości obu rozwiązań.</p>
-                    <span class="articles__card-link">Czytaj artykuł →</span>
-                </a>
-                <a href="/artykuly/041-czym-jest-safe-arch.html" class="articles__card">
-                    <span class="articles__card-tag">Metoda</span>
-                    <h3>All-on-6 i&nbsp;SAFE ARCH — zęby w&nbsp;jeden dzień</h3>
-                    <p>Jak działa metoda stałych zębów na 6 implantach i&nbsp;dla kogo jest idealna.</p>
-                    <span class="articles__card-link">Czytaj artykuł →</span>
-                </a>
-                <a href="/artykuly/opinie-safe-arch.html" class="articles__card">
-                    <span class="articles__card-tag">Opinie</span>
-                    <h3>Opinie pacjentów o&nbsp;metodzie SAFE&nbsp;ARCH</h3>
-                    <p>Prawdziwe historie osób, które odzyskały uśmiech w&nbsp;Laser Dental Clinic.</p>
-                    <span class="articles__card-link">Czytaj artykuł →</span>
-                </a>
-            </div>
-
-            <div class="articles__cta">
-                <a href="/artykuly/" class="btn btn--outline">Zobacz wszystkie artykuły (160+)</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FORMULARZ + CTA ===== -->
+    <!-- ===== 9. FORMULARZ ===== -->
     <section class="contact" id="formularz">
         <div class="container">
             <div class="contact__inner">
                 <div class="contact__info">
                     <span class="section-tag section-tag--light">Pierwszy krok</span>
-                    <h2 class="contact__title">Zostaw numer, oddzwonimy</h2>
-                    <p class="contact__desc">Pomożemy wybrać termin i&nbsp;odpowiemy na&nbsp;pytania.</p>
-
-                    <div class="contact__or">
-                        <span>lub zadzwoń bezpośrednio</span>
+                    <h2 class="contact__title">Zostaw numer — oddzwonimy</h2>
+                    <p class="contact__desc">Oddzwaniamy w&nbsp;ciągu 2h i&nbsp;pomagamy umówić termin konsultacji. Bez zobowiązań, bez pospieszania.</p>
+                    <div style="background:rgba(255,255,255,0.1); border-radius:var(--radius-md); padding:var(--space-md); margin-bottom:var(--space-xl);">
+                        <p style="color:rgba(255,255,255,0.8); font-size:var(--text-sm); line-height:1.6; margin:0;"><strong style="color:#fff;">Jak to działa?</strong><br>1. Zostawiasz numer<br>2. Oddzwaniamy w&nbsp;ciągu 2h<br>3. Umawiamy termin konsultacji (150&nbsp;zł)<br>4. Na wizycie lekarz przedstawi plan i&nbsp;ceny</p>
                     </div>
-
-                    <a href="tel:+48724809025" class="contact__phone">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        +48 724 809 025
-                    </a>
-
+                    <div class="contact__or"><span>lub zadzwoń bezpośrednio</span></div>
+                    <a href="tel:+48724809025" class="contact__phone"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+48 724 809 025</a>
                     <div class="contact__details">
-                        <div class="contact__detail">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            <span>ul. Głębocka 5/8U, Warszawa</span>
-                        </div>
-                        <div class="contact__detail">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                            <span>Pon 10-18 | Wt-Czw 10-19 | Pt 10-18</span>
-                        </div>
-                        <div class="contact__detail">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            <span>recepcja@ldclinic.pl</span>
-                        </div>
+                        <div class="contact__detail"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>ul. Głębocka 5/8U, Warszawa</span></div>
+                        <div class="contact__detail"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Pon 10-18 | Wt-Czw 10-19 | Pt 10-18</span></div>
+                        <div class="contact__detail"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>recepcja@ldclinic.pl</span></div>
                         <div class="contact__map-wrapper">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2439.9999536262535!2d21.050366494538327!3d52.29785529981781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecf6962ed15c5%3A0xfe9a029bc7752ae4!2sLaser%20Dental%20Clinic%20-%20Implanty%2C%20Korony%2C%20Lic%C3%B3wki%2C%20Leczenie%20bezz%C4%99bia%20SAFE%20ARCH.%20Usuwanie%20%C3%B3semek.%20Leczenie%20laserem.!5e0!3m2!1spl!2spl!4v1772096918331!5m2!1spl!2spl" width="100%" height="180" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa - Laser Dental Clinic, ul. Głębocka 5/8U Warszawa"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2439.9999536262535!2d21.050366494538327!3d52.29785529981781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecf6962ed15c5%3A0xfe9a029bc7752ae4!2sLaser%20Dental%20Clinic%20-%20Implanty%2C%20Korony%2C%20Lic%C3%B3wki%2C%20Leczenie%20bezz%C4%99bia%20SAFE%20ARCH.%20Usuwanie%20%C3%B3semek.%20Leczenie%20laserem.!5e0!3m2!1spl!2spl!4v1772096918331!5m2!1spl!2spl" width="100%" height="180" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa - Laser Dental Clinic"></iframe>
                             <a href="https://maps.app.goo.gl/3Z9HbcBiW72dL41Y6" target="_blank" rel="noopener" class="contact__map-link">Otwórz w Google Maps →</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="contact__form-wrapper">
                     <form class="contact__form" id="contactForm">
-                        <div class="form__group">
-                            <label for="name" class="form__label">Imię</label>
-                            <input type="text" id="name" name="name" class="form__input" placeholder="Twoje imię" required>
-                        </div>
-                        <div class="form__group">
-                            <label for="phone" class="form__label">Numer telefonu</label>
-                            <input type="tel" id="phone" name="phone" class="form__input" placeholder="+48 ___ ___ ___" required>
-                        </div>
-                        <div class="form__group">
-                            <label for="message" class="form__label">Wiadomość (opcjonalnie)</label>
-                            <textarea id="message" name="message" class="form__input form__textarea" rows="3" placeholder="Np. chcę zapytać o leczenie bezzębia..."></textarea>
-                        </div>
-                        <div class="form__consent">
-                            <label class="form__checkbox">
-                                <input type="checkbox" required>
-                                <span class="form__checkmark"></span>
-                                <span class="form__consent-text">Wyrażam zgodę na <a href="/polityka-prywatnosci" target="_blank">przetwarzanie danych osobowych</a> w celach marketingowych.</span>
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn--primary btn--lg btn--full" id="submitBtn">
-                            <span class="btn__text">Proszę o kontakt</span>
-                            <span class="btn__loading" style="display:none;">Wysyłanie...</span>
-                        </button>
-                        <p class="form__note">Pon-Pt 10:00-19:00</p>
+                        <div class="form__group"><label for="name" class="form__label">Imię</label><input type="text" id="name" name="name" class="form__input" placeholder="Twoje imię" required></div>
+                        <div class="form__group"><label for="phone" class="form__label">Numer telefonu</label><input type="tel" id="phone" name="phone" class="form__input" placeholder="+48 ___ ___ ___" required></div>
+                        <div class="form__group"><label for="message" class="form__label">Wiadomość (opcjonalnie)</label><textarea id="message" name="message" class="form__input form__textarea" rows="3" placeholder="Np. chcę zapytać o leczenie bezzębia..."></textarea></div>
+                        <div class="form__consent"><label class="form__checkbox"><input type="checkbox" required><span class="form__checkmark"></span><span class="form__consent-text">Wyrażam zgodę na <a href="/polityka-prywatnosci" target="_blank">przetwarzanie danych osobowych</a> w celach marketingowych.</span></label></div>
+                        <button type="submit" class="btn btn--primary btn--lg btn--full" id="submitBtn"><span class="btn__text">Zadzwońcie do mnie</span><span class="btn__loading" style="display:none;">Wysyłanie...</span></button>
+                        <p class="form__note">Oddzwaniamy w ciągu 2h (Pon-Pt 10:00-19:00)</p>
                     </form>
-                    <div class="contact__success" id="formSuccess" style="display:none;">
-                        <div class="contact__success-icon">
-                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        </div>
-                        <h3>Dziękujemy!</h3>
-                        <p>Recepcja oddzwoni do Ciebie wkrótce.</p>
-                    </div>
+                    <div class="contact__success" id="formSuccess" style="display:none;"><div class="contact__success-icon"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h3>Dziękujemy!</h3><p>Oddzwonimy do Ciebie w&nbsp;ciągu 2 godzin.</p></div>
                 </div>
             </div>
         </div>
@@ -1122,38 +381,27 @@
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__brand">
-                    <img src="img/logo-footer.png" alt="Laser Dental Clinic" class="footer__logo-img">
-                </div>
-                <div class="footer__links">
-                    <a href="https://www.instagram.com/laserdentalclinic_dentysta/" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://www.facebook.com/profile.php?id=100063795290125" target="_blank" rel="noopener">Facebook</a>
-                    <a href="https://www.youtube.com/@LDClinic_dentysta" target="_blank" rel="noopener">YouTube</a>
-                    <a href="https://www.tiktok.com/@laser.dental.clinic" target="_blank" rel="noopener">TikTok</a>
-                    <a href="https://www.znanylekarz.pl/placowki/laser-dental-cliniq" target="_blank" rel="noopener">Znany Lekarz</a>
-                </div>
-                <div class="footer__copy">
-                    &copy; 2026 Laser Dental Clinic. ul. Głębocka 5/8U, Warszawa.
-                </div>
-                <div class="footer__legal">
-                    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
-                    <a href="artykuly/">Biblia Bezzębia</a>
-                </div>
+        <div class="container"><div class="footer__inner">
+            <div class="footer__brand"><img src="img/logo-footer.png" alt="Laser Dental Clinic" class="footer__logo-img"></div>
+            <div class="footer__links">
+                <a href="https://www.instagram.com/laserdentalclinic_dentysta/" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100063795290125" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://www.youtube.com/@LDClinic_dentysta" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://www.tiktok.com/@laser.dental.clinic" target="_blank" rel="noopener">TikTok</a>
+                <a href="https://www.znanylekarz.pl/placowki/laser-dental-cliniq" target="_blank" rel="noopener">Znany Lekarz</a>
             </div>
-        </div>
+            <div class="footer__copy">&copy; 2026 Laser Dental Clinic. ul. Głębocka 5/8U, Warszawa.</div>
+            <div class="footer__legal">
+                <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+                <a href="artykuly/">Biblia Bezzębia — 160+ artykułów</a>
+            </div>
+        </div></div>
     </footer>
 
-    <!-- ===== FLOATING CTA (mobile) ===== -->
+    <!-- ===== FLOATING CTA (mobile) — telefon + WhatsApp ===== -->
     <div class="floating-cta" id="floatingCta">
-        <a href="https://wa.me/48724809025?text=Dzie%C5%84%20dobry%2C%20chcia%C5%82bym%2Fchcia%C5%82abym%20um%C3%B3wi%C4%87%20si%C4%99%20na%20konsultacj%C4%99." target="_blank" rel="noopener" class="floating-cta__whatsapp" aria-label="WhatsApp">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        </a>
-        <a href="tel:+48724809025" class="floating-cta__phone">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        </a>
-        <a href="#formularz" class="floating-cta__form">Umów wizytę</a>
+        <a href="https://wa.me/48724809025?text=Dzie%C5%84%20dobry%2C%20chcia%C5%82bym%2Fchcia%C5%82abym%20um%C3%B3wi%C4%87%20si%C4%99%20na%20konsultacj%C4%99." target="_blank" rel="noopener" class="floating-cta__whatsapp" aria-label="WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        <a href="tel:+48724809025" class="floating-cta__phone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
     </div>
 
     <script src="js/main.js"></script>
