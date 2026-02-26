@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Animate sections
-    document.querySelectorAll('.section-header, .safearch__content, .safearch__video, .doctor__video, .doctor__content, .contact__info, .contact__form-wrapper, .pricing__inner, .videos__cta, .reviews__cta').forEach(el => {
+    document.querySelectorAll('.section-header, .safearch__content, .safearch__video, .doctor__video, .doctor__content, .contact__info, .contact__form-wrapper, .pricing__inner, .videos__cta, .reviews__cta, .articles__cta').forEach(el => {
         el.classList.add('fade-up');
         animateOnScroll.observe(el);
     });
@@ -125,6 +125,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.doctor__photo').forEach(el => {
         el.classList.add('scale-up');
         animateOnScroll.observe(el);
+    });
+
+    // Animate article cards
+    document.querySelectorAll('.articles__card').forEach((card, index) => {
+        card.classList.add('fade-up');
+        card.style.transitionDelay = `${index * 0.1}s`;
+        animateOnScroll.observe(card);
     });
 
     // ===== COUNTER ANIMATION =====

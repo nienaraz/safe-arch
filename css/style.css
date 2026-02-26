@@ -1211,6 +1211,84 @@ a {
     line-height: 1.6;
 }
 
+/* ===== ARTICLES SECTION ===== */
+.articles {
+    padding: var(--space-4xl) 0;
+    background: var(--white);
+}
+
+.articles__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    margin-bottom: var(--space-2xl);
+}
+
+.articles__card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-xl);
+    background: var(--off-white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray-200);
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+.articles__card:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.articles__card-tag {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.2rem 0.6rem;
+    background: var(--accent);
+    color: var(--white);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: var(--space-md);
+}
+
+.articles__card h3 {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--gray-900);
+    line-height: 1.35;
+    margin-bottom: var(--space-sm);
+}
+
+.articles__card p {
+    font-size: var(--text-sm);
+    color: var(--gray-500);
+    line-height: 1.6;
+    flex: 1;
+}
+
+.articles__card-link {
+    display: inline-block;
+    margin-top: var(--space-md);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--accent-dark);
+    transition: var(--transition);
+}
+
+.articles__card:hover .articles__card-link {
+    color: var(--primary);
+}
+
+.articles__cta {
+    text-align: center;
+}
+
 /* ===== CONTACT / FORM ===== */
 .contact {
     padding: var(--space-4xl) 0;
@@ -1786,6 +1864,11 @@ a {
 
     .problem__grid {
         grid-template-columns: 1fr;
+    }
+
+    .articles__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
     }
 
     .reviews__grid {
