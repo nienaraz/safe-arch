@@ -81,6 +81,117 @@ document.addEventListener('DOMContentLoaded', () => {
         animateOnScroll.observe(el);
     });
 
+    // Animate section tags separately
+    document.querySelectorAll('.section-tag').forEach(el => {
+        animateOnScroll.observe(el);
+    });
+
+    // Animate safearch list items with stagger
+    document.querySelectorAll('.safearch__list li').forEach((li, i) => {
+        li.classList.add('fade-up');
+        li.style.transitionDelay = `${i * 0.08}s`;
+        animateOnScroll.observe(li);
+    });
+
+    // Animate doctor stats
+    document.querySelectorAll('.doctor__stat').forEach((stat, i) => {
+        stat.classList.add('fade-up');
+        stat.style.transitionDelay = `${i * 0.15}s`;
+        animateOnScroll.observe(stat);
+    });
+
+    // Animate pricing list items
+    document.querySelectorAll('.pricing__list li').forEach((li, i) => {
+        li.classList.add('slide-left');
+        li.style.transitionDelay = `${i * 0.1}s`;
+        animateOnScroll.observe(li);
+    });
+
+    // Animate glossary items
+    document.querySelectorAll('.glossary__item').forEach((item, i) => {
+        item.classList.add('fade-up');
+        item.style.transitionDelay = `${(i % 2) * 0.15}s`;
+        animateOnScroll.observe(item);
+    });
+
+    // Animate FAQ items
+    document.querySelectorAll('.faq__item').forEach((item, i) => {
+        item.classList.add('fade-up');
+        item.style.transitionDelay = `${i * 0.08}s`;
+        animateOnScroll.observe(item);
+    });
+
+    // Animate doctor photo with scale
+    document.querySelectorAll('.doctor__photo').forEach(el => {
+        el.classList.add('scale-up');
+        animateOnScroll.observe(el);
+    });
+
+    // ===== COUNTER ANIMATION =====
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                const text = el.textContent.trim();
+                const match = text.match(/^([\d\s,.]+)/);
+                if (match) {
+                    const raw = match[1].replace(/\s/g, '').replace(',', '.');
+                    const target = parseFloat(raw);
+                    if (!isNaN(target) && target > 0) {
+                        animateCounter(el, target, text);
+                    }
+                }
+                counterObserver.unobserve(el);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    function animateCounter(el, target, fullText) {
+        const suffix = fullText.replace(/^[\d\s,.]+/, '');
+        const isDecimal = fullText.includes('.');
+        const duration = 1500;
+        const start = performance.now();
+
+        function update(now) {
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            const current = target * eased;
+
+            if (isDecimal) {
+                el.textContent = current.toFixed(1).replace('.', ',') + suffix;
+            } else {
+                const num = Math.round(current);
+                el.textContent = num.toLocaleString('pl-PL').replace(/\s/g, ' ') + suffix;
+            }
+
+            if (progress < 1) requestAnimationFrame(update);
+        }
+        requestAnimationFrame(update);
+    }
+
+    // Observe numbers for counter animation
+    document.querySelectorAll('.hero__trust-number, .doctor__stat-number').forEach(el => {
+        const text = el.textContent.trim();
+        if (/^\d/.test(text)) {
+            counterObserver.observe(el);
+        }
+    });
+
+    // ===== TILT EFFECT on pricing =====
+    const pricing = document.querySelector('.hero__pricing');
+    if (pricing && window.matchMedia('(hover: hover)').matches) {
+        pricing.addEventListener('mousemove', (e) => {
+            const rect = pricing.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            pricing.style.transform = `perspective(800px) rotateX(${-y * 3}deg) rotateY(${x * 3}deg)`;
+        });
+        pricing.addEventListener('mouseleave', () => {
+            pricing.style.transform = '';
+        });
+    }
+
     // ===== CONTACT FORM (Formspree) =====
     const form = document.getElementById('contactForm');
     const submitBtn = document.getElementById('submitBtn');
