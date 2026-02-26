@@ -100,6 +100,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -1463,8 +1464,9 @@ a {
 }
 
 .form__checkbox input {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
     flex-shrink: 0;
     margin-top: 2px;
     accent-color: var(--primary);
@@ -1892,7 +1894,17 @@ a {
     }
 
     .hero__trust {
-        gap: var(--space-md);
+        gap: var(--space-sm);
+        flex-wrap: wrap;
+    }
+
+    .hero__trust-divider {
+        display: none;
+    }
+
+    .hero__trust-item {
+        flex: 1 1 auto;
+        min-width: 80px;
     }
 
     .hero__scroll-indicator {
@@ -2348,5 +2360,12 @@ a {
 
     .cookie-btn {
         flex: 1;
+        min-height: 44px;
+        padding: 12px 20px;
+    }
+
+    /* Move floating CTA above cookie banner on mobile */
+    .floating-cta {
+        bottom: 110px;
     }
 }
