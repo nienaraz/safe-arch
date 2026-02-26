@@ -485,5 +485,72 @@
         </div>
     </footer>
     <script src="../js/cookies.js"></script>
+    <script>
+    // Collapsible article grids — show 4 items, hide rest behind toggle
+    (function() {
+        'use strict';
+        var grids = document.querySelectorAll('.articles-grid');
+        grids.forEach(function(grid) {
+            var cards = grid.querySelectorAll('.article-card');
+            if (cards.length <= 4) return;
+
+            grid.classList.add('articles-grid--collapsed');
+
+            var btn = document.createElement('button');
+            btn.className = 'articles-toggle';
+            btn.innerHTML = 'Pokaz\u0300 wszystkie (' + cards.length + ') <span class="toggle-arrow">\u25BC</span>';
+            grid.parentNode.insertBefore(btn, grid.nextSibling);
+
+            btn.addEventListener('click', function() {
+                var collapsed = grid.classList.contains('articles-grid--collapsed');
+                if (collapsed) {
+                    grid.classList.remove('articles-grid--collapsed');
+                    grid.classList.add('articles-grid--expanded');
+                    btn.innerHTML = 'Zwi\u0144 <span class="toggle-arrow">\u25B2</span>';
+                } else {
+                    grid.classList.add('articles-grid--collapsed');
+                    grid.classList.remove('articles-grid--expanded');
+                    btn.innerHTML = 'Pokaz\u0300 wszystkie (' + cards.length + ') <span class="toggle-arrow">\u25BC</span>';
+                    // Scroll to the category header
+                    var section = grid.closest('.articles-category');
+                    if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Sticky nav active state
+        var navLinks = document.querySelectorAll('.articles-hub__nav-link');
+        var sections = document.querySelectorAll('.articles-category');
+
+        function updateActiveNav() {
+            var scrollY = window.scrollY + 180;
+            sections.forEach(function(section) {
+                var top = section.offsetTop;
+                var bottom = top + section.offsetHeight;
+                var id = section.getAttribute('id');
+                var link = document.querySelector('.articles-hub__nav-link[href="#' + id + '"]');
+                if (link) {
+                    if (scrollY >= top && scrollY < bottom) {
+                        link.classList.add('articles-hub__nav-link--active');
+                    } else {
+                        link.classList.remove('articles-hub__nav-link--active');
+                    }
+                }
+            });
+        }
+
+        var ticking = false;
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                requestAnimationFrame(function() {
+                    updateActiveNav();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+        updateActiveNav();
+    })();
+    </script>
 </body>
 </html>
