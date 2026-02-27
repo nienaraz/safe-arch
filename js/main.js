@@ -118,6 +118,19 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const el = entry.target;
+
+                // Support data-count attribute (element starts at 0, animates to data-count value)
+                const dataCount = el.getAttribute('data-count');
+                if (dataCount) {
+                    const target = parseInt(dataCount, 10);
+                    if (!isNaN(target) && target > 0) {
+                        animateCounter(el, target, target.toLocaleString('pl-PL').replace(/\s/g, ' '));
+                    }
+                    counterObserver.unobserve(el);
+                    return;
+                }
+
+                // Fallback: parse from text content
                 const text = el.textContent.trim();
                 const match = text.match(/^([\d\s,.]+)/);
                 if (match) {
@@ -134,13 +147,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function animateCounter(el, target, fullText) {
         const suffix = fullText.replace(/^[\d\s,.]+/, '');
-        const isDecimal = fullText.includes('.');
-        const duration = 1500;
+        const isDecimal = String(target).includes('.');
+        const duration = 2000;
         const start = performance.now();
 
         function update(now) {
             const elapsed = now - start;
             const progress = Math.min(elapsed / duration, 1);
+            // Ease out cubic for smooth deceleration
             const eased = 1 - Math.pow(1 - progress, 3);
             const current = target * eased;
 
@@ -158,25 +172,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Observe numbers for counter animation
     document.querySelectorAll('.hero__trust-number, .doctor__stat-number').forEach(el => {
+        const dataCount = el.getAttribute('data-count');
         const text = el.textContent.trim();
-        if (/^\d/.test(text)) {
+        if (dataCount || /^\d/.test(text)) {
             counterObserver.observe(el);
         }
     });
 
-    // ===== TILT EFFECT on pricing =====
-    const pricing = document.querySelector('.hero__pricing');
-    if (pricing && window.matchMedia('(hover: hover)').matches) {
-        pricing.addEventListener('mousemove', (e) => {
-            const rect = pricing.getBoundingClientRect();
+    // ===== TILT EFFECT on pricing bar =====
+    const pricingBar = document.querySelector('.pricing-bar__inner');
+    if (pricingBar && window.matchMedia('(hover: hover)').matches) {
+        pricingBar.addEventListener('mousemove', (e) => {
+            const rect = pricingBar.getBoundingClientRect();
             const x = (e.clientX - rect.left) / rect.width - 0.5;
             const y = (e.clientY - rect.top) / rect.height - 0.5;
-            pricing.style.transform = `perspective(800px) rotateX(${-y * 3}deg) rotateY(${x * 3}deg)`;
+            pricingBar.style.transform = `perspective(800px) rotateX(${-y * 2}deg) rotateY(${x * 2}deg)`;
         });
-        pricing.addEventListener('mouseleave', () => {
-            pricing.style.transform = '';
+        pricingBar.addEventListener('mouseleave', () => {
+            pricingBar.style.transform = '';
         });
     }
+
+    // ===== ANIMATE METAMORFOZY CARDS ON SCROLL =====
+    document.querySelectorAll('.metamorfozy__card').forEach((card, index) => {
+        card.classList.add('fade-up');
+        card.style.transitionDelay = `${index * 0.08}s`;
+        animateOnScroll.observe(card);
+    });
+
+    // ===== ANIMATE PRICING BAR =====
+    const pricingBarSection = document.querySelector('.pricing-bar');
+    if (pricingBarSection) {
+        pricingBarSection.classList.add('fade-up');
+        animateOnScroll.observe(pricingBarSection);
+    }
+
+    // ===== ANIMATE BIBLIA CARDS =====
+    document.querySelectorAll('.biblia__card').forEach((card, index) => {
+        card.classList.add('fade-up');
+        card.style.transitionDelay = `${index * 0.08}s`;
+        animateOnScroll.observe(card);
+    });
 
     // ===== CONTACT FORM (Formspree) =====
     const form = document.getElementById('contactForm');

@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=20260227r">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
@@ -154,47 +154,85 @@
         </div>
     </nav>
 
-    <!-- ===== 1. HERO ===== -->
+    <!-- ===== 1. HERO — Split layout z zdjęciem lekarza ===== -->
     <header class="hero" id="main-content">
         <div class="hero__bg"></div>
-        <div class="hero__content container">
-            <div class="hero__badge"><img src="img/logo-header.png" alt="Laser Dental Clinic Warszawa" class="hero__badge-logo"></div>
-            <h1 class="hero__title">
-                Koniec z&nbsp;ruchomą protezą.<br>
-                <span class="hero__title-accent">Nowe zęby w&nbsp;ciągu 24h.*</span>
-            </h1>
-            <p class="hero__subtitle">Odzyskaj pewny uśmiech — implant zamiast protezy. Bezpiecznie, w&nbsp;znieczuleniu, u&nbsp;doświadczonego lekarza.</p>
-            <div class="hero__cta">
-                <a href="#formularz" class="btn btn--primary btn--lg">Zostaw numer — oddzwonimy<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-                <a href="tel:+48724809025" class="btn btn--outline btn--lg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+48 724 809 025</a>
+        <div class="hero__split container">
+            <div class="hero__content">
+                <div class="hero__badge"><img src="img/logo-header.png" alt="Laser Dental Clinic Warszawa" class="hero__badge-logo"></div>
+                <h1 class="hero__title">
+                    Odzyskaj pewny uśmiech.<br>
+                    <span class="hero__title-accent">Na&nbsp;stałe.</span>
+                </h1>
+                <p class="hero__subtitle">Implanty zamiast ruchomej protezy. Bezpiecznie, w&nbsp;znieczuleniu, pod opieką doświadczonego specjalisty z&nbsp;20-letnim stażem.</p>
+                <div class="hero__cta">
+                    <a href="#formularz" class="btn btn--primary btn--lg">Umów konsultację<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="tel:+48724809025" class="btn btn--outline btn--lg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+48 724 809 025</a>
+                </div>
+                <p class="hero__callback-note">Oddzwaniamy w&nbsp;ciągu 2h. Bez zobowiązań.</p>
+                <div class="hero__trust">
+                    <div class="hero__trust-item"><span class="hero__trust-number" data-count="20">20</span><span class="hero__trust-label">lat doświadczenia</span></div>
+                    <div class="hero__trust-divider"></div>
+                    <div class="hero__trust-item"><span class="hero__trust-number" data-count="15000">0</span><span class="hero__trust-label">wszczepionych implantów</span></div>
+                    <div class="hero__trust-divider"></div>
+                    <div class="hero__trust-item"><span class="hero__trust-number">4.9/5</span><span class="hero__trust-label">w&nbsp;87 opiniach</span></div>
+                </div>
             </div>
-            <p class="hero__callback-note">Oddzwaniamy w&nbsp;ciągu 2h. Bez zobowiązań.</p>
-            <div class="hero__pricing">
-                <div class="hero__price-item"><span class="hero__price-value">od 35 000 zł</span><span class="hero__price-label">Stałe zęby na implantach (SAFE&nbsp;ARCH)</span></div>
-                <div class="hero__price-divider"></div>
-                <div class="hero__price-item"><span class="hero__price-value">od 3 500 zł</span><span class="hero__price-label">Pojedynczy implant</span></div>
-                <div class="hero__price-divider"></div>
-                <div class="hero__price-item"><span class="hero__price-value">150 zł</span><span class="hero__price-label">Konsultacja z&nbsp;planem leczenia</span></div>
-            </div>
-            <p class="hero__disclaimer">* Tymczasowe zęby w&nbsp;ciągu 24h od zabiegu. Stałe, ostateczne uzupełnienie po 4–6 mies. gojenia. Raty i&nbsp;indywidualne plany płatności.</p>
-            <div class="hero__trust">
-                <div class="hero__trust-item"><span class="hero__trust-number">20&nbsp;lat</span><span class="hero__trust-label">doświadczenia</span></div>
-                <div class="hero__trust-divider"></div>
-                <div class="hero__trust-item"><span class="hero__trust-number">Tysiące</span><span class="hero__trust-label">wszczepionych implantów</span></div>
-                <div class="hero__trust-divider"></div>
-                <div class="hero__trust-item"><span class="hero__trust-number">4.9/5</span><span class="hero__trust-label">w&nbsp;87 opiniach</span></div>
+            <div class="hero__photo">
+                <img src="img/magda-przybysz.jpg?v=3" alt="dr Magdalena Przybysz — specjalista implantologii" class="hero__photo-img">
+                <div class="hero__photo-caption">dr Magdalena Przybysz<br><small>Specjalista implantologii</small></div>
             </div>
         </div>
         <div class="hero__scroll-indicator"><span>Dowiedz się więcej</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
     </header>
 
+    <!-- ===== PRICING BAR (pod hero, nie w hero) ===== -->
+    <section class="pricing-bar">
+        <div class="container">
+            <div class="pricing-bar__inner">
+                <div class="pricing-bar__item"><span class="pricing-bar__value">od 35 000 zł</span><span class="pricing-bar__label">Stałe zęby na implantach (SAFE&nbsp;ARCH)</span></div>
+                <div class="pricing-bar__divider"></div>
+                <div class="pricing-bar__item"><span class="pricing-bar__value">od 3 500 zł</span><span class="pricing-bar__label">Pojedynczy implant z&nbsp;koroną</span></div>
+                <div class="pricing-bar__divider"></div>
+                <div class="pricing-bar__item"><span class="pricing-bar__value">150 zł</span><span class="pricing-bar__label">Konsultacja z&nbsp;planem leczenia</span></div>
+            </div>
+            <p class="pricing-bar__note">* Tymczasowe zęby w&nbsp;24h od zabiegu. Stałe uzupełnienie po 4–6 mies. Raty i&nbsp;indywidualne plany płatności.</p>
+        </div>
+    </section>
+
+    <!-- ===== METAMORFOZY (social proof od razu po hero) ===== -->
+    <section class="metamorfozy" id="metamorfozy">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Efekty leczenia</span>
+                <h2 class="section-title">Metamorfozy naszych pacjentów</h2>
+                <p class="section-desc">Każdy z&nbsp;tych uśmiechów to realna historia. Zobaczysz jak zmienia się życie po&nbsp;leczeniu.</p>
+            </div>
+            <div class="metamorfozy__carousel-wrap">
+                <button class="metamorfozy__btn metamorfozy__btn--prev" aria-label="Poprzednie zdjęcie" onclick="document.getElementById('metamorfCarousel').scrollBy({left:-320,behavior:'smooth'})"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+                <div class="metamorfozy__grid" id="metamorfCarousel">
+                    <div class="metamorfozy__card"><img src="img/safe-arch/karuzela1.jpg" alt="Metamorfoza pacjenta - efekt leczenia implantami" loading="lazy"><div class="metamorfozy__overlay"><span>Kompleksowa odbudowa SAFE&nbsp;ARCH</span></div></div>
+                    <div class="metamorfozy__card"><img src="img/safe-arch/karuzela2.jpg" alt="Metamorfoza pacjenta - nowy uśmiech" loading="lazy"><div class="metamorfozy__overlay"><span>Implanty + protezy stałe</span></div></div>
+                    <div class="metamorfozy__card"><img src="img/safe-arch/karuzela3.jpg" alt="Efekt leczenia bezzębia" loading="lazy"><div class="metamorfozy__overlay"><span>Odbudowa zębów górnych</span></div></div>
+                    <div class="metamorfozy__card"><img src="img/safe-arch/karuzela4.jpg" alt="Metamorfoza - implanty zębowe" loading="lazy"><div class="metamorfozy__overlay"><span>Pełna odbudowa górna i&nbsp;dolna</span></div></div>
+                    <div class="metamorfozy__card"><img src="img/safe-arch/karuzela5.jpg" alt="Metamorfoza pacjentki" loading="lazy"><div class="metamorfozy__overlay"><span>Implanty — pacjentka 65+</span></div></div>
+                    <div class="metamorfozy__card"><img src="img/safe-arch/karuzela6.jpg" alt="Efekt leczenia - nowe zęby" loading="lazy"><div class="metamorfozy__overlay"><span>Natychmiastowa odbudowa</span></div></div>
+                    <div class="metamorfozy__card"><img src="img/safe-arch/karuzela7.jpg" alt="Metamorfoza - zęby na implantach" loading="lazy"><div class="metamorfozy__overlay"><span>SAFE ARCH — zęby w&nbsp;24h</span></div></div>
+                    <div class="metamorfozy__card"><img src="img/safe-arch/karuzela8.jpg" alt="Metamorfoza - odbudowa uśmiechu" loading="lazy"><div class="metamorfozy__overlay"><span>Most na implantach</span></div></div>
+                    <div class="metamorfozy__card"><img src="img/safe-arch/karuzela9.jpg" alt="Metamorfoza - leczenie bezzębia" loading="lazy"><div class="metamorfozy__overlay"><span>Kompleksowa rehabilitacja</span></div></div>
+                </div>
+                <button class="metamorfozy__btn metamorfozy__btn--next" aria-label="Następne zdjęcie" onclick="document.getElementById('metamorfCarousel').scrollBy({left:320,behavior:'smooth'})"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+            </div>
+        </div>
+    </section>
+
     <!-- ===== 2. PROBLEM ===== -->
     <section class="problem" id="problem">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Czy to brzmi znajomo?</span>
-                <h2 class="section-title">Masz dość ruchomej protezy? Jest wyjście.</h2>
-                <p class="section-desc">Wielu naszych pacjentów nosiło ruchomą protezę latami. Myśleli, że&nbsp;nie&nbsp;ma innego wyjścia. Ale&nbsp;jest.</p>
+                <span class="section-tag">Rozumiemy Cię</span>
+                <h2 class="section-title">To nie musi tak wyglądać. Jest rozwiązanie.</h2>
+                <p class="section-desc">Wielu naszych pacjentów nosiło ruchomą protezę latami. Myśleli, że&nbsp;nie&nbsp;ma innego wyjścia. Byli tu, gdzie Ty — i&nbsp;dziś się uśmiechają.</p>
             </div>
             <div class="problem__grid">
                 <div class="problem__card">
@@ -271,7 +309,7 @@
                     <span class="section-tag">Kto Cię leczy?</span>
                     <h2 class="section-title">dr Magdalena Przybysz</h2>
                     <p class="doctor__lead">Specjalista implantologii, laseroterapii i&nbsp;protetyki. Prowadzi pacjenta od&nbsp;pierwszej wizyty do&nbsp;nowego uśmiechu.</p>
-                    <div class="doctor__stats"><div class="doctor__stat"><span class="doctor__stat-number">20+</span><span class="doctor__stat-label">lat doświadczenia</span></div><div class="doctor__stat"><span class="doctor__stat-number">Tysiące</span><span class="doctor__stat-label">wszczepionych implantów</span></div></div>
+                    <div class="doctor__stats"><div class="doctor__stat"><span class="doctor__stat-number" data-count="20">0</span><span class="doctor__stat-label">lat doświadczenia</span></div><div class="doctor__stat"><span class="doctor__stat-number" data-count="15000">0</span><span class="doctor__stat-label">wszczepionych implantów</span></div><div class="doctor__stat"><span class="doctor__stat-number">4.9/5</span><span class="doctor__stat-label">opinie pacjentów</span></div></div>
                     <blockquote class="doctor__quote">Moim celem jest, aby pacjent na każdym etapie leczenia czuł się pewnie.</blockquote>
                 </div>
             </div>
@@ -457,7 +495,7 @@
         <a href="tel:+48724809025" class="floating-cta__phone"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=20260227r"></script>
     <script src="js/cookies.js"></script>
 </body>
 </html>
