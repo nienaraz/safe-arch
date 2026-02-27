@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="artykuly.css">
+    <link rel="stylesheet" href="artykuly.css?v=20260227">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -114,8 +114,7 @@
                     <a href="#specjalne" class="articles-hub__nav-link">Specjalne</a>
                     <a href="#metamorfozy" class="articles-hub__nav-link">Metamorfozy</a>
                     <a href="#opinie" class="articles-hub__nav-link">Opinie</a>
-                    <a href="#dzielnice" class="articles-hub__nav-link">Dzielnice</a>
-                    <a href="#lokalne" class="articles-hub__nav-link">Miasta</a>
+                    <!-- SEO: dzielnice i miasta ukryte z nawigacji -->
                 </div>
             </nav>
 
@@ -366,8 +365,8 @@
                 </div>
             </section>
 
-            <!-- Dzielnice Warszawy - prawy brzeg -->
-            <section class="articles-category" id="dzielnice">
+            <!-- Dzielnice Warszawy - SEO only (ukryte wizualnie, crawlable) -->
+            <section class="articles-category seo-only" id="dzielnice">
                 <div class="articles-category__header">
                     <div class="articles-category__icon">📍</div>
                     <h2 class="articles-category__title">Leczenie bezzębia i implanty - dzielnice Warszawy</h2>
@@ -397,8 +396,8 @@
                 </div>
             </section>
 
-            <!-- Strony lokalne - miasta -->
-            <section class="articles-category" id="lokalne">
+            <!-- Strony lokalne - SEO only (ukryte wizualnie, crawlable) -->
+            <section class="articles-category seo-only" id="lokalne">
                 <div class="articles-category__header">
                     <div class="articles-category__icon">🚗</div>
                     <h2 class="articles-category__title">Leczenie bezzębia - okoliczne miasta</h2>
@@ -423,8 +422,8 @@
                 </div>
             </section>
 
-            <!-- Implanty lokalne -->
-            <section class="articles-category" id="implanty-lokalne">
+            <!-- Implanty lokalne - SEO only (ukryte wizualnie, crawlable) -->
+            <section class="articles-category seo-only" id="implanty-lokalne">
                 <div class="articles-category__header">
                     <div class="articles-category__icon">🗺</div>
                     <h2 class="articles-category__title">Implanty zębowe w Twoim regionie</h2>
@@ -455,7 +454,7 @@
                     <div class="articles-contact__info">
                         <span class="section-tag section-tag--light">Pierwszy krok</span>
                         <h2 class="articles-contact__title">Masz pytania?<br>Porozmawiajmy.</h2>
-                        <p class="articles-contact__desc">Umów bezpłatną konsultację i&nbsp;dowiedz się, jakie rozwiązanie będzie najlepsze dla&nbsp;Ciebie.</p>
+                        <p class="articles-contact__desc">Umów konsultację (150&nbsp;zł) i&nbsp;dowiedz się, jakie rozwiązanie będzie najlepsze dla&nbsp;Ciebie.</p>
 
                         <div class="articles-contact__actions">
                             <a href="../index.html#formularz" class="btn btn--primary btn--lg">Umów konsultację</a>
