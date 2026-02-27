@@ -529,11 +529,40 @@ a {
     margin-bottom: 0;
 }
 
-/* ===== METAMORFOZY — Karuzela zdj\u0119\u0107 ===== */
+/* ===== METAMORFOZY — Premium dark gallery ===== */
 .metamorfozy {
     padding: var(--space-4xl) 0;
-    background: var(--gray-50);
+    background: linear-gradient(165deg, var(--gray-900) 0%, var(--primary-dark) 50%, #2A2318 100%);
     position: relative;
+    overflow: hidden;
+}
+
+.metamorfozy::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.04;
+    background-image:
+        radial-gradient(circle at 30% 20%, rgba(196,180,158,0.5) 0%, transparent 40%),
+        radial-gradient(circle at 70% 80%, rgba(255,255,255,0.3) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.metamorfozy .section-tag {
+    background: rgba(255,255,255,0.15);
+    color: var(--accent-light);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.metamorfozy .section-title {
+    background: linear-gradient(135deg, var(--white) 0%, var(--accent-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.metamorfozy .section-desc {
+    color: rgba(255,255,255,0.65);
 }
 
 .metamorfozy .section-header {
@@ -617,21 +646,23 @@ a {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: var(--white);
-    border: 1px solid var(--gray-200);
-    box-shadow: var(--shadow-md);
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: var(--transition);
-    color: var(--gray-700);
+    color: var(--white);
 }
 
 .metamorfozy__btn:hover {
-    background: var(--primary);
-    color: var(--white);
-    border-color: var(--primary);
+    background: var(--accent);
+    color: var(--primary-dark);
+    border-color: var(--accent);
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -708,10 +739,23 @@ a {
     line-height: 1.7;
 }
 
-/* ===== PROBLEM SECTION ===== */
+/* ===== PROBLEM SECTION — Warm empathy ===== */
 .problem {
     padding: var(--space-4xl) 0;
-    background: var(--off-white);
+    background: var(--white);
+    position: relative;
+}
+
+.problem::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
 }
 
 .problem__grid {
@@ -740,10 +784,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    background: linear-gradient(135deg, var(--primary), var(--accent-dark));
     border-radius: var(--radius-md);
     margin-bottom: var(--space-lg);
     color: var(--white);
+    box-shadow: 0 8px 24px rgba(92,78,60,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problem__card:hover .problem__icon {
+    transform: scale(1.1) rotate(-3deg);
+    box-shadow: 0 12px 32px rgba(92,78,60,0.3);
 }
 
 .problem__card h3 {
@@ -760,9 +811,23 @@ a {
     line-height: 1.7;
 }
 
-/* ===== VIDEOS SECTION ===== */
+/* ===== VIDEOS SECTION — Clean white with accent ===== */
 .videos {
     padding: var(--space-4xl) 0;
+    background: var(--white);
+    position: relative;
+}
+
+.videos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--primary));
+    border-radius: 2px;
 }
 
 .videos__filter {
@@ -907,10 +972,21 @@ a {
     margin-top: var(--space-2xl);
 }
 
-/* ===== PROCESS / TIMELINE ===== */
+/* ===== PROCESS / TIMELINE — Warm unique bg ===== */
 .process {
     padding: var(--space-4xl) 0;
-    background: var(--off-white);
+    background: linear-gradient(180deg, var(--gray-50) 0%, #F5F0EB 50%, var(--off-white) 100%);
+    position: relative;
+}
+
+.process::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--primary), var(--accent));
 }
 
 .process__timeline {
@@ -1101,10 +1177,22 @@ a {
     object-fit: cover;
 }
 
-/* ===== DOCTOR ===== */
+/* ===== DOCTOR — Warm premium section ===== */
 .doctor {
     padding: var(--space-4xl) 0;
-    background: var(--off-white);
+    background: linear-gradient(180deg, #F8F5F1 0%, var(--off-white) 50%, #F5F0EB 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.doctor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--accent), var(--primary), var(--accent), transparent);
 }
 
 .doctor__inner {
@@ -1123,7 +1211,7 @@ a {
     width: 100%;
     max-width: 520px;
     border-radius: var(--radius-xl);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12), 0 0 0 4px var(--accent), 0 0 0 8px rgba(173,155,131,0.2);
     object-fit: cover;
 }
 
@@ -1215,20 +1303,64 @@ a {
 }
 
 .doctor__quote {
-    padding: var(--space-lg);
+    padding: var(--space-xl) var(--space-xl) var(--space-xl) var(--space-2xl);
     border-left: 4px solid var(--accent);
     background: var(--white);
-    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
     font-size: var(--text-lg);
     font-style: italic;
     color: var(--gray-700);
     line-height: 1.7;
+    position: relative;
+    box-shadow: var(--shadow-sm);
 }
 
-/* ===== REVIEWS / OPINIE ===== */
+.doctor__quote::before {
+    content: '\201C';
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    font-size: 4rem;
+    font-family: var(--font-heading);
+    color: var(--accent);
+    opacity: 0.3;
+    line-height: 1;
+}
+
+/* ===== REVIEWS / OPINIE — Premium dark ===== */
 .reviews {
     padding: var(--space-4xl) 0;
-    background: var(--off-white);
+    background: linear-gradient(165deg, var(--primary-dark) 0%, var(--primary) 60%, var(--primary-light) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.reviews::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.05;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.4) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(196,180,158,0.5) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.reviews .section-tag {
+    background: rgba(255,255,255,0.15);
+    color: var(--accent-light);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.reviews .section-title {
+    background: linear-gradient(135deg, var(--white) 0%, var(--accent-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.reviews .section-desc {
+    color: rgba(255,255,255,0.7);
 }
 
 /* Reviews carousel */
@@ -1265,20 +1397,23 @@ a {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: var(--white);
-    border: 1px solid var(--gray-200);
-    box-shadow: var(--shadow-md);
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: var(--transition);
+    color: var(--white);
 }
 
 .reviews__carousel-btn:hover {
-    background: var(--primary);
-    color: var(--white);
-    border-color: var(--primary);
+    background: var(--accent);
+    color: var(--primary-dark);
+    border-color: var(--accent);
 }
 
 .reviews__carousel-btn--prev {
@@ -1355,7 +1490,7 @@ a {
     display: inline-flex;
     align-items: center;
     gap: var(--space-xs);
-    color: var(--primary);
+    color: var(--accent-light);
     font-weight: 600;
     font-size: var(--text-sm);
     text-decoration: none;
@@ -1363,7 +1498,7 @@ a {
 }
 
 .reviews__link:hover {
-    color: var(--accent-dark);
+    color: var(--white);
 }
 
 .reviews__cta {
@@ -1468,10 +1603,11 @@ a {
     right: -16px;
 }
 
-/* ===== PRICING / CENNIK ===== */
+/* ===== PRICING / CENNIK — Clean with accent ===== */
 .pricing {
     padding: var(--space-4xl) 0;
-    background: var(--white);
+    background: var(--gray-50);
+    position: relative;
 }
 
 .pricing__inner {
@@ -1519,11 +1655,12 @@ a {
 }
 
 .pricing__item--highlight {
-    background: rgba(0, 82, 112, 0.05);
+    background: linear-gradient(135deg, rgba(92,78,60,0.06) 0%, rgba(173,155,131,0.08) 100%);
     border-radius: var(--radius-md);
-    padding: var(--space-md) !important;
-    border-left: 3px solid var(--primary) !important;
+    padding: var(--space-lg) !important;
+    border-left: 4px solid var(--accent) !important;
     border-bottom: 1px solid var(--gray-200);
+    box-shadow: 0 2px 12px rgba(92,78,60,0.06);
 }
 
 .pricing__item--highlight .pricing__item-name {
@@ -2497,10 +2634,21 @@ a {
     }
 }
 
-/* ===== FAQ SECTION ===== */
+/* ===== FAQ SECTION — Distinct clean ===== */
 .faq {
     padding: var(--space-4xl) 0;
-    background: var(--off-white);
+    background: var(--white);
+    position: relative;
+}
+
+.faq::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent 10%, var(--accent) 50%, transparent 90%);
 }
 
 .faq__list {
@@ -2509,9 +2657,9 @@ a {
 }
 
 .faq__item {
-    background: var(--white);
+    background: var(--gray-50);
     border: 1px solid var(--gray-200);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     margin-bottom: var(--space-md);
     overflow: hidden;
     transition: var(--transition);
@@ -2519,7 +2667,12 @@ a {
 
 .faq__item[open] {
     border-color: var(--accent);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
+    background: var(--white);
+}
+
+.faq__item:hover {
+    border-color: var(--gray-300);
 }
 
 .faq__question {
@@ -2578,10 +2731,11 @@ a {
     color: var(--accent-dark);
 }
 
-/* ===== BIBLIA BEZZĘBIA SECTION ===== */
+/* ===== BIBLIA BEZZĘBIA SECTION — Warm accent ===== */
 .biblia {
     padding: var(--space-4xl) 0;
-    background: var(--white);
+    background: linear-gradient(180deg, #FAF8F5 0%, #F5F0EB 50%, var(--off-white) 100%);
+    position: relative;
 }
 
 .biblia__grid {
@@ -2595,19 +2749,37 @@ a {
     display: flex;
     flex-direction: column;
     padding: var(--space-xl);
-    background: var(--off-white);
+    background: var(--white);
     border-radius: var(--radius-lg);
-    border: 2px solid var(--accent);
+    border: 1px solid var(--gray-200);
     text-decoration: none;
     color: inherit;
-    transition: var(--transition);
+    transition: transform 0.4s cubic-bezier(0.22,1,0.36,1), box-shadow 0.4s ease, border-color 0.3s ease;
     box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+}
+
+.biblia__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--primary));
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .biblia__card:hover {
     border-color: var(--accent);
-    box-shadow: var(--shadow-md);
-    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-6px);
+}
+
+.biblia__card:hover::before {
+    opacity: 1;
 }
 
 .biblia__icon {
