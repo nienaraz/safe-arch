@@ -1519,9 +1519,23 @@ a {
     padding-top: var(--space-xl);
 }
 
+.reviews__cta .btn--primary {
+    background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent) 100%);
+    color: var(--primary-dark);
+    border-color: var(--accent-light);
+    font-weight: 700;
+    box-shadow: 0 4px 20px rgba(196,180,158,0.4);
+}
+
+.reviews__cta .btn--primary:hover {
+    background: linear-gradient(135deg, var(--white) 0%, var(--accent-light) 100%);
+    box-shadow: 0 8px 32px rgba(196,180,158,0.5);
+    transform: translateY(-2px);
+}
+
 .reviews__cta p {
     font-size: var(--text-lg);
-    color: var(--gray-600);
+    color: rgba(255,255,255,0.7);
     margin-bottom: var(--space-md);
 }
 
