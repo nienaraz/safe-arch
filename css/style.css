@@ -732,7 +732,7 @@ a {
 /* ===== PROBLEM SECTION — Warm empathy ===== */
 .problem {
     padding: var(--space-4xl) 0;
-    background: var(--white);
+    background: linear-gradient(180deg, var(--white) 0%, var(--off-white) 100%);
     position: relative;
 }
 
@@ -749,14 +749,15 @@ a {
 .problem__card {
     background: var(--white);
     padding: var(--space-2xl);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-xl);
     border: 1px solid var(--gray-200);
-    transition: var(--transition);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .problem__card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(92, 78, 60, 0.12), 0 4px 12px rgba(0,0,0,0.06);
     border-color: var(--accent);
 }
 
@@ -793,10 +794,10 @@ a {
     line-height: 1.7;
 }
 
-/* ===== VIDEOS SECTION — Clean white with accent ===== */
+/* ===== VIDEOS SECTION — Warm off-white ===== */
 .videos {
     padding: var(--space-4xl) 0;
-    background: var(--white);
+    background: linear-gradient(180deg, var(--gray-50) 0%, var(--white) 100%);
     position: relative;
 }
 
@@ -2631,7 +2632,7 @@ a {
 /* ===== FAQ SECTION — Distinct clean ===== */
 .faq {
     padding: var(--space-4xl) 0;
-    background: var(--white);
+    background: linear-gradient(180deg, var(--off-white) 0%, var(--white) 100%);
     position: relative;
 }
 
