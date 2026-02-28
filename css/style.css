@@ -60,11 +60,11 @@
     --font-heading: 'Playfair Display', Georgia, serif;
 
     /* Sizing - bigger for 50+ audience */
-    --text-xs: 0.875rem;
-    --text-sm: 1rem;
-    --text-base: 1.125rem;
-    --text-lg: 1.25rem;
-    --text-xl: 1.5rem;
+    --text-xs: 1rem;
+    --text-sm: 1.1rem;
+    --text-base: 1.2rem;
+    --text-lg: 1.35rem;
+    --text-xl: 1.6rem;
     --text-2xl: 1.875rem;
     --text-3xl: 2.25rem;
     --text-4xl: 3rem;
@@ -419,13 +419,13 @@ a {
     width: 100%;
     max-width: 480px;
     text-align: center;
-    padding: var(--space-md) var(--space-lg);
+    padding: var(--space-lg) var(--space-lg);
     background: rgba(58,47,36,0.75);
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     color: var(--white);
     font-weight: 600;
-    font-size: var(--text-sm);
+    font-size: var(--text-lg);
     line-height: 1.4;
     border-radius: 0 0 0 0;
 }
@@ -434,23 +434,12 @@ a {
     display: block;
     font-weight: 400;
     color: var(--accent-light);
-    font-size: var(--text-xs);
-    margin-top: 2px;
+    font-size: var(--text-sm);
+    margin-top: 4px;
 }
 
 .hero__scroll-indicator {
-    position: absolute;
-    bottom: var(--space-xl);
-    left: 25%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: var(--text-xs);
-    animation: scrollBounce 2s infinite;
-    z-index: 3;
+    display: none;
 }
 
 @keyframes scrollBounce {
@@ -524,8 +513,8 @@ a {
 
 .pricing-bar__note {
     text-align: center;
-    font-size: var(--text-xs);
-    color: rgba(255,255,255,0.45);
+    font-size: var(--text-sm);
+    color: rgba(255,255,255,0.7);
     margin-top: var(--space-md);
     margin-bottom: 0;
 }
@@ -748,15 +737,7 @@ a {
 }
 
 .problem::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: var(--accent);
-    border-radius: 2px;
+    display: none;
 }
 
 .problem__grid {
@@ -820,15 +801,7 @@ a {
 }
 
 .videos::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 4px;
-    background: linear-gradient(90deg, var(--accent), var(--primary));
-    border-radius: 2px;
+    display: none;
 }
 
 .videos__filter {
@@ -981,13 +954,7 @@ a {
 }
 
 .process::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--accent), var(--primary), var(--accent));
+    display: none;
 }
 
 .process__timeline {
@@ -1190,13 +1157,7 @@ a {
 }
 
 .doctor::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, transparent, var(--accent), var(--primary), var(--accent), transparent);
+    display: none;
 }
 
 .doctor__inner {
@@ -2675,13 +2636,7 @@ a {
 }
 
 .faq::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, transparent 10%, var(--accent) 50%, transparent 90%);
+    display: none;
 }
 
 .faq__list {

@@ -33,7 +33,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="artykuly.css?v=20260227d">
+    <link rel="stylesheet" href="artykuly.css?v=20260228b">
+    <style>
+        /* Dark page overrides for shared components */
+        body { background: #0F0D0B; }
+        .nav.nav--visible { background: rgba(15, 13, 11, 0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .footer { background: #0F0D0B; color: rgba(255,255,255,0.5); }
+        .footer__copy { color: rgba(255,255,255,0.3); }
+        .footer__links a { color: rgba(255,255,255,0.5); }
+        .footer__links a:hover { color: var(--accent-light); }
+        .footer__legal a { color: rgba(255,255,255,0.35); }
+        .footer__legal a:hover { color: var(--accent-light); }
+    </style>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -96,7 +107,11 @@
                 <a href="../index.html" class="articles-hub__back">&larr; Strona główna</a>
                 <span class="section-tag">Kompletny poradnik</span>
                 <h1 class="section-title">Biblia Bezzębia</h1>
-                <p class="section-desc">100 artykułów, które odpowiedzą na każde Twoje pytanie o bezzębie, implanty, protezy i odzyskiwanie uśmiechu.</p>
+                <p class="section-desc">100 artykułów, które odpowiedzą na każde Twoje pytanie o&nbsp;bezzębie, implanty, protezy i&nbsp;odzyskiwanie uśmiechu.</p>
+                <div class="articles-hub__stat">
+                    <span class="articles-hub__stat-number">100</span>
+                    <span class="articles-hub__stat-label">artykułów w 12 kategoriach</span>
+                </div>
             </div>
 
             <!-- Sticky category navigation -->
@@ -511,6 +526,41 @@
     </footer>
     <script src="../js/cookies.js"></script>
     <script>
+    // Scroll-triggered reveal for categories
+    (function() {
+        'use strict';
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.articles-category:not(.seo-only)').forEach(function(section) {
+            observer.observe(section);
+        });
+
+        // Also animate the contact section
+        var contact = document.querySelector('.articles-contact');
+        if (contact) {
+            contact.style.opacity = '0';
+            contact.style.transform = 'translateY(30px)';
+            contact.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            var contactObs = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        contactObs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            contactObs.observe(contact);
+        }
+    })();
+
     // Collapsible article grids — show 4 items, hide rest behind toggle
     (function() {
         'use strict';
