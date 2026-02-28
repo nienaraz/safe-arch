@@ -919,7 +919,7 @@ a {
     background: var(--tag-red);
     color: var(--white);
     border-radius: var(--radius-sm);
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -1550,7 +1550,7 @@ a {
 }
 
 .videos__grid--compact .video-card__content h3 {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 /* Carousel navigation arrows */
@@ -1711,7 +1711,7 @@ a {
     background: var(--accent);
     color: var(--white);
     border-radius: var(--radius-full);
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.04em;
